@@ -43,9 +43,9 @@
 	<form action="upload.php" method="post" enctype="multipart/form-data">
     	Select the file to upload
     <input multiple type="file" name="fileToUpload[]" id="fileToUpload" style="display: none">
-    <span class="chooseFileDiv" onclick="chooseFile()">Choose File</span>
+    <span class="chooseDiv chooseFileDiv" onclick="chooseFile()">Choose File</span>
         <span id="filenamePrev"></span>
-    <input class="submitInput" type="submit" value="Upload" name="submit">
+    <input disabled="disabled" class="submitInput" type="submit" value="Upload" name="submit">
 	</form>
 </div>
 <script src="jquery-3.1.1.min.js"></script>
@@ -68,6 +68,8 @@
                     }
                 });
             }
+            $('input.submitInput').attr("disabled",false);
+            $('input.submitInput').addClass("chooseDiv");
         })
     })
 </script>
