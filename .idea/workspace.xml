@@ -2,32 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b690fe7-0ba5-4cfa-894b-e7adefe90562" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webproj.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/js/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/conference.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/conference.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery-3.1.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="webproj.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,8 +28,18 @@
       <file leaf-file-name="upload.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+            <state relative-caret-position="269">
+              <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deleteData.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deleteData.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -71,12 +57,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conference.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="conference.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/conference.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+            <state relative-caret-position="90">
+              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="importCsv.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/importCsv.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="70" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="70" />
+              <folding>
+                <marker date="1479121447000" expanded="true" signature="714:802" placeholder="select Speak... Speaker" />
+                <marker date="1479121447000" expanded="true" signature="915:1059" placeholder="insert into Speaker... " />
+                <marker date="1479121447000" expanded="true" signature="1228:1317" placeholder="insert into Conference... " />
+                <marker date="1479121447000" expanded="true" signature="1408:1439" placeholder="select count... Conference" />
+                <marker date="1479121447000" expanded="true" signature="1695:1882" placeholder="insert into Event... " />
+                <marker date="1479121447000" expanded="true" signature="1973:1999" placeholder="select count... Event" />
+                <marker date="1479121447000" expanded="true" signature="2383:2468" placeholder="select speak... Speaker" />
+                <marker date="1479121447000" expanded="true" signature="2651:2905" placeholder="insert into Presentation... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,8 +102,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/conference.css" />
-        <option value="$PROJECT_DIR$/upload.php" />
         <option value="$PROJECT_DIR$/conference.html" />
+        <option value="$PROJECT_DIR$/upload.php" />
         <option value="$PROJECT_DIR$/css/conference.css" />
       </list>
     </option>
@@ -179,7 +184,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="settings.editor.selected.configurable" value="debugger.stepping" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -227,12 +232,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1479116320790</updated>
-      <workItem from="1479116322064" duration="4820000" />
+      <workItem from="1479116322064" duration="6327000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4820000" />
+    <option name="totallyTimeSpent" value="6327000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="28" y="24" width="1280" height="721" extended-state="0" />
@@ -262,14 +267,16 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/upload.php">
+    <entry file="file://$PROJECT_DIR$/deleteData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -284,11 +291,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/conference.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        <state relative-caret-position="90">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/importCsv.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="70" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="70" />
+          <folding>
+            <marker date="1479121447000" expanded="true" signature="714:802" placeholder="select Speak... Speaker" />
+            <marker date="1479121447000" expanded="true" signature="915:1059" placeholder="insert into Speaker... " />
+            <marker date="1479121447000" expanded="true" signature="1228:1317" placeholder="insert into Conference... " />
+            <marker date="1479121447000" expanded="true" signature="1408:1439" placeholder="select count... Conference" />
+            <marker date="1479121447000" expanded="true" signature="1695:1882" placeholder="insert into Event... " />
+            <marker date="1479121447000" expanded="true" signature="1973:1999" placeholder="select count... Event" />
+            <marker date="1479121447000" expanded="true" signature="2383:2468" placeholder="select speak... Speaker" />
+            <marker date="1479121447000" expanded="true" signature="2651:2905" placeholder="insert into Presentation... " />
+          </folding>
         </state>
       </provider>
     </entry>
