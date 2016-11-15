@@ -1,0 +1,31 @@
+.eventTable{
+    margin: 100px auto;
+    background-color: white;
+    width:100%;
+}
+.back{
+    position: fixed;
+    top:60px;
+    left:5px;
+    padding: 10px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    text-align: center;
+
+}
+.eventTable > .legend{
+    font-weight: bold;
+}
+.event span,.legend span{
+    padding: 10px;
+    float: left;
+    width: 16%;
+    border-right: 1px dashed #D9D9D9;
+    border-bottom: 1px dashed #D9D9D9;
+    text-align: center;
+}
+.eventDetail{
+    width:100px;
+    transition: width 2s;
+}

@@ -39,6 +39,7 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
 <div class="uploadCSVDiv">
 	<form action="upload.php" method="post" enctype="multipart/form-data">
     	Select the file to upload
@@ -48,7 +49,63 @@
     <input disabled="disabled" class="submitInput" type="submit" value="Upload" name="submit">
 	</form>
 </div>
+<?
+$connect=mysql_connect("mysql.comp.polyu.edu.hk","16027789x","jsiyppoo") or die("链接数据库失败！");
+//连接数据库(test)
+mysql_select_db("16027789x",$connect) or die (mysql_error());
+$sql="select conferenceID,name,date,duration from Conference;";
+$result=mysql_query($sql) or die(mysql_error());
+//var_dump($conferences);
+?>
+<div class="conference-list">
+    <ul class="conference-items">
+        <? while ($conference = mysql_fetch_assoc($result)) {?>
+        <li >
+            <div class=" confernece-info">
+                <div class="info-top">
+                    <span> <?echo $conference['date'] ?> </span>
+                    <em>·</em>
+                    <span><?echo $conference['duration'] ?>day</span>
+                </div>
+                <h4 class="title">
+                    <a href="./conferenceDetail.php?conferenceId=<?echo $conference['conferenceID']?>">
+                        <?echo $conference['name']?>
+                    </a>
+                </h4>
+                <?php
+                $conferenceId = $conference['conferenceID'];
+                $sql ="SELECT count(*) FROM Event where conferenceID='$conferenceId'";
+                $r = mysql_query($sql) or die(mysql_error());
+                $eventNum = mysql_fetch_array($r,MYSQLI_NUM);
+                $sql ="SELECT count(*) FROM Presentation JOIN Event where Presentation.eventID=Event.eventID and conferenceID='$conferenceId' ";
+                $r = mysql_query($sql) or die(mysql_error());
+                $preNum = mysql_fetch_array($r,MYSQLI_NUM);
+                ?>
+                <div class="info-footer">
+                    <span title="event number" class="glyphicon glyphicon-list"><span><?echo $eventNum[0]?></span></span>
+                    <span title="presentaion number" class="glyphicon glyphicon-check"><span><?echo $preNum[0]?></span></span>
+                </div>
 
+            </div>
+        </li>
+        <?}?>
+
+    </ul>
+</div>
+<footer>
+    <address>
+        COMP PolyU HongKong<br/>
+        <abbr title="Phone">P:</abbr>+852xxxxxxxx
+    </address>
+    <address>
+        <strong>COMP3421</strong><br/>
+        <strong>Members:</strong><br/>
+        <span title="email">Anna:</span><a href="mailto:anna.huang@connect.polyu.hk">anna.huang@connect.polyu.hk</a><br/>
+        <span title="email">Laura:</span><a href="mailto:anna.huang@connect.polyu.hk">anna.huang@connect.polyu.hk</a><br>
+        <span title="email">Lian:</span><a href="mailto:14040502d@connect.polyu.hk">14040502d@connect.polyu.hk</a><br>
+        <span title="email">Ivan:</span><a href="mailto:13068412d@connect.polyu.hk">13068412d@connect.polyu.hk</a>
+    </address>
+</footer>
 <script src="jquery-3.1.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="Bootstrap/js/bootstrap.min.js"></script>
@@ -56,6 +113,7 @@
   var chooseFile = function () {
       $('#fileToUpload').click();
   };
+
     $(function () {
         $('#fileToUpload').change(function () {
             if (typeof (FileReader) != "undefined") {
@@ -76,19 +134,6 @@
         })
     })
 </script>
-<footer>
-    <address>
-        COMP PolyU HongKong<br/>
-        <abbr title="Phone">P:</abbr>+852xxxxxxxx
-    </address>
-    <address>
-        <strong>COMP3421</strong><br/>
-        <strong>Members:</strong><br/>
-        <span title="email">Anna:</span><a href="mailto:anna.huang@connect.polyu.hk">anna.huang@connect.polyu.hk</a><br/>
-        <span title="email">Laura:</span><a href="mailto:anna.huang@connect.polyu.hk">anna.huang@connect.polyu.hk</a><br>
-        <span title="email">Lian:</span><a href="mailto:14040502d@connect.polyu.hk">14040502d@connect.polyu.hk</a><br>
-        <span title="email">Ivan:</span><a href="mailto:13068412d@connect.polyu.hk">13068412d@connect.polyu.hk</a>
-    </address>
-</footer>
+
 </body>
 </html>

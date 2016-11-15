@@ -22,5 +22,54 @@
     border: solid 1px black;
     border-radius: 5px;
 }
+.conference-list{
+    background-color: white;
+    margin: 70px auto;
+    max-width: 740px;
+}
+.conference-items{
+    float: none;
+    margin: 0 auto;
+    padding-top: 10px;
+    list-style: none;
+
+}
+
+.conference-items > li{
+    position: relative;
+    margin: 0 0 17px 0;
+    border-bottom: 1px dashed #D9D9D9;
+    padding-bottom: 17px;
+}
+
+.info-top{
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.info-footer{
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.info-footer > span {
+    margin: 0 5px 0 12px;
+}
+
+.info-footer > span > span{
+    margin-left: 4px;
+}
+
+
+.blue-link{
+    color: #4094c7;
+    font-weight: 500;
+}
+
+.blue-link:hover{
+    color: rgb(7, 91, 141);
+    font-weight: 500;
+
+}
 
 

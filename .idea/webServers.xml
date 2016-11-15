@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="3a7365e9-4ec4-48b1-b3ea-07e884281fb0" name="webproj" url="http://csdoor.comp.polyu.edu.hk">
-        <fileTransfer host="csdoor.comp.polyu.edu.hk" port="22" rootFolder="/webhome/16010922x/public_html/proj" accessType="SFTP" username="16010922X">
+        <fileTransfer host="csdoor.comp.polyu.edu.hk" port="22" rootFolder="/webhome/16010922x/public_html/proj" accessType="SFTP" password="dfebdfc4dfd3dfc2dfc5dfdddf9bdf9bdf9adf9e" username="16010922X">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
