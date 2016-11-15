@@ -61,7 +61,7 @@ while($current_line<count($temp)){
 	$current_line+=2;
 	while($current_line<count($temp)){
 		$temp_info=$temp[$current_line];
-		echo $temp_info[0];
+		//echo $temp_info[0];
 		if($temp_info[0]=="EventTitle")break;
 		$Presentation_info=$temp[$current_line];
 		$first_name=$Presentation_info[5];
@@ -69,7 +69,7 @@ while($current_line<count($temp)){
 		$sql="select speakerID from Speaker where '$first_name'=firstname and '$last_name'=lastname;";
 		$speaker_ID_t=mysql_query($sql) or dir(mysql_error());
 		$speaker_ID=mysql_fetch_array($speaker_ID_t,MYSQLI_NUM);
-		echo $speaker_ID[0];
+		//echo $speaker_ID[0];
 		if(mysql_error())echo"导入失败！";
 		$sql="insert into Presentation(title,speakerID,eventID,beginning_time,ending_time,biography,abstract) values('$Presentation_info[0]','$speaker_ID[0]','$EventID[0]','$Presentation_info[1]','$Presentation_info[2]','$Presentation_info[3]','$Presentation_info[4]');";
 		mysql_query($sql) or die(mysql_error());

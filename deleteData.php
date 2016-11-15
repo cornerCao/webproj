@@ -10,4 +10,5 @@ $sql="TRUNCATE TABLE Event;";
 mysql_query($sql) or die(mysql_error());
 $sql="TRUNCATE TABLE Presentation;";
 mysql_query($sql) or die(mysql_error());
+echo "删除成功！";
 ?>
