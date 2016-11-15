@@ -1,7 +1,12 @@
 .eventTable{
     margin: 100px auto;
+    width:90%;
+}
+.eventCell{
+    margin-top: 20px;
+    border: 1px solid #D9D9D9;
     background-color: white;
-    width:100%;
+
 }
 .back{
     position: fixed;
@@ -14,18 +19,49 @@
     text-align: center;
 
 }
-.eventTable > .legend{
+/*
+.eventTable .legend{
     font-weight: bold;
 }
-.event span,.legend span{
+.event>span,.eventTable>.legend>span{
     padding: 10px;
     float: left;
     width: 16%;
-    border-right: 1px dashed #D9D9D9;
-    border-bottom: 1px dashed #D9D9D9;
     text-align: center;
 }
-.eventDetail{
-    width:100px;
-    transition: width 2s;
+
+.legend>span{
+    border: 1px solid black;
 }
+.pre,.event>.legend{
+    margin-left: 16%;
+    width: 81%;
+}
+.pre>span,.event>.legend>span{
+    padding: 10px;
+    float: left;
+    width: 14%;
+    text-align: center;
+}
+.pre>span,.event>span{
+    border-right: 1px dashed #D9D9D9;
+    border-bottom: 1px dashed #D9D9D9;
+}
+.pre>span:first-child,.event>span:first-child{
+    border-left: 1px dashed #D9D9D9;
+}*/
+
+.eventCell > .table tr > td{
+    border: none;
+    border: 1px dashed #D9D9D9;
+    /*border-bottom: 1px dashed #D9D9D9;*/
+    text-align: center;
+}
+.eventCell > .table tr >th{
+    border: 1px solid #D9D9D9;
+}
+
+thead > tr{
+    border: 1px solid #D9D9D9;
+}
+

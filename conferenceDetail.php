@@ -50,47 +50,99 @@ mysql_select_db("16027789x",$connect) or die (mysql_error());
 $sql="select eventId,title,date,beginning_time,ending_time,venue from Event where conferenceId='$conferenceId';";
 $result=mysql_query($sql) or die(mysql_error());
 ?>
-<div class="eventTable">
-    <div class="legend">
-        <span>#</span><span>Title</span><span>Date</span><span>Beginning_time</span><span>Ending_time</span><span>Venue</span>
-    </div>
-    <? while ($event = mysql_fetch_assoc($result)) {?>
-    <div class="event" onclick="showEventDetails(this)" id=<?echo "event".$event['eventId']?>>
-        <span><?echo $event['eventId']?></span>
-        <span><?echo $event['title']?></span>
-        <span><?echo $event['date']?></span>
-        <span><?echo $event['beginning_time']?></span>
-        <span><?echo $event['ending_time']?></span>
-        <span><?echo $event['venue']?></span>
-    </div>
-    <?}?>
-</div>
-<!--<div class="eventTable table-responsive">-->
-<!--    <table class="table">-->
-<!--        <thead>-->
-<!--        <tr>-->
-<!--            <th>#</th>-->
-<!--            <th>Title</th>-->
-<!--            <th>Date</th>-->
-<!--            <th>Begining_time</th>-->
-<!--            <th>Ending_time</th>-->
-<!--            <th>Venue</th>-->
-<!--        </tr>-->
-<!--        </thead>-->
-<!--        <tbody>-->
-<!--        --><?// while ($event = mysql_fetch_assoc($result)) {?>
-<!--        <tr>-->
-<!--            <td>--><?//echo $event['eventId']?><!--</td>-->
-<!--            <td>--><?//echo $event['title']?><!--</td>-->
-<!--            <td>--><?//echo $event['date']?><!--</td>-->
-<!--            <td>--><?//echo $event['beginning_time']?><!--</td>-->
-<!--            <td>--><?//echo $event['ending_time']?><!--</td>-->
-<!--            <td>--><?//echo $event['venue']?><!--</td>-->
-<!--        </tr>-->
-<!--        --><?//}?>
-<!--        </tbody>-->
-<!--    </table>-->
+<!--<div class="eventTable">-->
+<!---->
+<!--    --><?// while ($event = mysql_fetch_assoc($result)) {?>
+<!--        <div class="legend">-->
+<!--            <span>Event#</span><span>Title</span><span>Date</span><span>Beginning_time</span><span>Ending_time</span><span>Venue</span>-->
+<!--        </div>-->
+<!--    <div class="event" onclick="showEventDetails(this)" id=--><?//echo "event".$event['eventId']?><!-->-->
+<!--        <span>--><?//echo $event['eventId']?><!--</span>-->
+<!--        <span>--><?//echo $event['title']?><!--</span>-->
+<!--        <span>--><?//echo $event['date']?><!--</span>-->
+<!--        <span>--><?//echo $event['beginning_time']?><!--</span>-->
+<!--        <span>--><?//echo $event['ending_time']?><!--</span>-->
+<!--        <span>--><?//echo $event['venue']?><!--</span>-->
+<!--        <div class="legend">-->
+<!--            <span>Presentation#</span><span>Title</span><span>Speaker</span><span>Beginning_time</span><span>Ending_time</span><span>Biography</span><span>Abstract</span>-->
+<!--        </div>-->
+<!--        --><?php
+//        $eventId = $event['eventId'];
+//            $sql="select * from Presentation join Speaker where eventID='$eventId' and Presentation.speakerID = Speaker.speakerID;";
+//            $pre_temp=mysql_query($sql) or die(mysql_error());
+//            while ($pre = mysql_fetch_assoc($pre_temp)) {
+//                ?>
+<!--                <div class="pre">-->
+<!--                    <span>--><?//echo $pre['abstractID']?><!--</span>-->
+<!--                    <span>--><?//echo $pre['title']?><!--</span>-->
+<!--                    <span>--><?//echo $pre['firstname'].' '.$pre['lastname']?><!--</span>-->
+<!--                    <span>--><?//echo $pre['beginning_time']?><!--</span>-->
+<!--                    <span>--><?//echo $pre['ending_time']?><!--</span>-->
+<!--                    <span>--><?//echo $pre['biography']?><!--</span>-->
+<!--                    <span>--><?//echo $pre['abstract']?><!--</span>-->
+<!--                </div>-->
+<!--                --><?php
+//            }
+//        ?>
+<!--    </div>-->
+<!--    --><?//}?>
 <!--</div>-->
+<div class="eventTable">
+<? while ($event = mysql_fetch_assoc($result)) {?>
+<div class="eventCell">
+<!--<div class="eventTable table-responsive">-->
+    <table class="table" style="margin-bottom: 0px">
+        <thead>
+        <tr>
+            <th>Event</th>
+            <th>Title</th>
+            <th>Date</th>
+            <th>Begining_time</th>
+            <th>Ending_time</th>
+            <th>Venue</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td></td>
+            <td><?echo $event['title']?></td>
+            <td><?echo $event['date']?></td>
+            <td><?echo $event['beginning_time']?></td>
+            <td><?echo $event['ending_time']?></td>
+            <td><?echo $event['venue']?></td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="table" style="margin-top:0;margin-left: 16%;width: 84%">
+        <thead>
+        <tr>
+            <th>Presentation</th><th>Title</th><th>Speaker</th><th>Beginning_time</th><th>Ending_time</th><th>Biography</th><th>Abstract</th>
+        </tr>
+        </thead>
+        <tbody>
+            <?php
+            $eventId = $event['eventId'];
+            $sql="select * from Presentation join Speaker where eventID='$eventId' and Presentation.speakerID = Speaker.speakerID;";
+            $pre_temp=mysql_query($sql) or die(mysql_error());
+            while ($pre = mysql_fetch_assoc($pre_temp)) {?>
+                <tr>
+                    <td></td>
+                    <td><?echo $pre['title']?></td>
+                    <td><?echo $pre['firstname'].' '.$pre['lastname']?></td>
+                    <td><?echo $pre['beginning_time']?></td>
+                    <td><?echo $pre['ending_time']?></td>
+                    <td><?echo $pre['biography']?></td>
+                    <td><?echo $pre['abstract']?></td>
+                </tr>
+            <?}?>
+        </tbody>
+    </table>
+</div>
+<?
+}
+?>
+</div>
+
 <!--</div>-->
 <script src="jquery-3.1.1.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

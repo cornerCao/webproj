@@ -42,9 +42,8 @@
 
 <div class="uploadCSVDiv">
 	<form action="upload.php" method="post" enctype="multipart/form-data">
-    	Select the file to upload
     <input required="required" multiple type="file" name="fileToUpload[]" id="fileToUpload" style="display: none">
-    <span class="chooseDiv chooseFileDiv" onclick="chooseFile()">Choose File</span>
+    <span class="chooseDiv chooseFileDiv" onclick="chooseFile()">Select File</span>
         <span id="filenamePrev"></span>
     <input disabled="disabled" class="submitInput" type="submit" value="Upload" name="submit">
 	</form>
