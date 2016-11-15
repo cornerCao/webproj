@@ -6,9 +6,10 @@
     <title>webproj</title>
     <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/conference.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -38,7 +39,6 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
 <div class="uploadCSVDiv">
 	<form action="upload.php" method="post" enctype="multipart/form-data">
     	Select the file to upload
@@ -48,6 +48,7 @@
     <input disabled="disabled" class="submitInput" type="submit" value="Upload" name="submit">
 	</form>
 </div>
+
 <script src="jquery-3.1.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="Bootstrap/js/bootstrap.min.js"></script>
@@ -65,6 +66,8 @@
                     var file = $(this);
                     if (regex.test(file[0].name.toLowerCase())) {
                         filePrev.append(file[0].name+"&nbsp;&nbsp;");
+                    }else{
+                        alert("only csv files accepted!");
                     }
                 });
             }
@@ -73,5 +76,19 @@
         })
     })
 </script>
+<footer>
+    <address>
+        COMP PolyU HongKong<br/>
+        <abbr title="Phone">P:</abbr>+852xxxxxxxx
+    </address>
+    <address>
+        <strong>COMP3421</strong><br/>
+        <strong>Members:</strong><br/>
+        <span title="email">Anna:</span><a href="mailto:anna.huang@connect.polyu.hk">anna.huang@connect.polyu.hk</a><br/>
+        <span title="email">Laura:</span><a href="mailto:anna.huang@connect.polyu.hk">anna.huang@connect.polyu.hk</a><br>
+        <span title="email">Lian:</span><a href="mailto:14040502d@connect.polyu.hk">14040502d@connect.polyu.hk</a><br>
+        <span title="email">Ivan:</span><a href="mailto:13068412d@connect.polyu.hk">13068412d@connect.polyu.hk</a>
+    </address>
+</footer>
 </body>
 </html>

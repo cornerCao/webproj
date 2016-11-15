@@ -6,6 +6,8 @@
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+
     <script>
       function calculateRoute(from, to) {
         // Center initialized to Naples, Italy
@@ -80,7 +82,10 @@
       });
     </script>
     <style type="text/css">
-      h1{
+      .mainDiv{
+        margin-top: 70px;
+      }
+      .mainDiv > h1{
         font-size: 20px;
       }
 
@@ -110,7 +115,7 @@
     </style>
   </head>
   <body>
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -140,6 +145,7 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
+  <div class="mainDiv">
     <h1>From HK Airport to your conference venue:</h1>
     <form id="calculate-route" name="calculate-route" action="#" method="get">
       <label for="to">To:</label>
@@ -151,5 +157,21 @@
     </form>
     <div id="map"></div>
     <p id="error"></p>
+  </div>
+
+  <footer>
+    <address>
+      COMP PolyU HongKong<br/>
+      <abbr title="Phone">P:</abbr>+852xxxxxxxx
+    </address>
+    <address>
+      <strong>COMP3421</strong><br/>
+      <strong>Members:</strong><br/>
+      <span title="email">Anna:</span><a href="mailto:anna.huang@connect.polyu.hk">anna.huang@connect.polyu.hk</a><br/>
+      <span title="email">Laura:</span><a href="mailto:anna.huang@connect.polyu.hk">anna.huang@connect.polyu.hk</a><br>
+      <span title="email">Lian:</span><a href="mailto:14040502d@connect.polyu.hk">14040502d@connect.polyu.hk</a><br>
+      <span title="email">Ivan:</span><a href="mailto:13068412d@connect.polyu.hk">13068412d@connect.polyu.hk</a>
+    </address>
+  </footer>
   </body>
 </html>
