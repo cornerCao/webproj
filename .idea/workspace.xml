@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b690fe7-0ba5-4cfa-894b-e7adefe90562" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/survey.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/surveyComplete.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/attractions.html" afterPath="$PROJECT_DIR$/attractions.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conference.php" afterPath="$PROJECT_DIR$/conference.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conferenceDetail.php" afterPath="$PROJECT_DIR$/conferenceDetail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/conference.css" afterPath="$PROJECT_DIR$/css/conference.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/common.css" afterPath="$PROJECT_DIR$/css/common.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/conferenceDetail.css" afterPath="$PROJECT_DIR$/css/conferenceDetail.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/upload.php" afterPath="$PROJECT_DIR$/upload.php" />
     </list>
     <ignored path="webproj.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,17 +35,17 @@
       <file leaf-file-name="upload.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-103">
-              <caret line="85" column="21" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
+            <state relative-caret-position="195">
+              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
               <folding>
-                <marker date="1479214917000" expanded="true" signature="2244:2332" placeholder="select Speak... Speaker" />
-                <marker date="1479214917000" expanded="true" signature="2484:2628" placeholder="insert into Speaker... " />
-                <marker date="1479214917000" expanded="true" signature="2913:3029" placeholder="insert into Conference... " />
-                <marker date="1479214917000" expanded="true" signature="3139:3170" placeholder="select count... Conference" />
-                <marker date="1479214917000" expanded="true" signature="3466:3653" placeholder="insert into Event... " />
-                <marker date="1479214917000" expanded="true" signature="3782:3808" placeholder="select count... Event" />
-                <marker date="1479214917000" expanded="true" signature="4292:4377" placeholder="select speak... Speaker" />
-                <marker date="1479214917000" expanded="true" signature="4612:4866" placeholder="insert into Presentation... " />
+                <marker date="1479230935000" expanded="true" signature="2245:2333" placeholder="select Speak... Speaker" />
+                <marker date="1479230935000" expanded="true" signature="2485:2629" placeholder="insert into Speaker... " />
+                <marker date="1479230935000" expanded="true" signature="2914:3030" placeholder="insert into Conference... " />
+                <marker date="1479230935000" expanded="true" signature="3139:3170" placeholder="select count... Conference" />
+                <marker date="1479230935000" expanded="true" signature="3466:3653" placeholder="insert into Event... " />
+                <marker date="1479230935000" expanded="true" signature="3782:3808" placeholder="select count... Event" />
+                <marker date="1479230935000" expanded="true" signature="4292:4377" placeholder="select speak... Speaker" />
+                <marker date="1479230935000" expanded="true" signature="4612:4866" placeholder="insert into Presentation... " />
               </folding>
             </state>
           </provider>
@@ -60,47 +64,65 @@
       <file leaf-file-name="conference.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conference.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="45" column="71" selection-start-line="45" selection-start-column="71" selection-end-line="45" selection-end-column="71" />
+            <state relative-caret-position="140">
+              <caret line="121" column="34" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
               <folding>
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1479224240000" expanded="true" signature="2325:2379" placeholder="select Speak... Speaker" />
-                <marker date="1479224240000" expanded="true" signature="3219:3266" placeholder="SELECT count... Event" />
-                <marker date="1479224240000" expanded="true" signature="3219:3277" placeholder="SELECT count... Event" />
-                <marker date="1479224240000" expanded="true" signature="3219:3280" placeholder="SELECT count... Event" />
-                <marker date="1479224240000" expanded="true" signature="3430:3548" placeholder="SELECT count... Presentation" />
-                <marker date="1479224240000" expanded="true" signature="3430:3549" placeholder="SELECT count... Presentation" />
-                <marker date="1479224240000" expanded="true" signature="3733:4005" placeholder="..." />
-                <marker date="1479224240000" expanded="true" signature="4080:4148" placeholder="..." />
-                <marker date="1479224240000" expanded="true" signature="4080:4787" placeholder="..." />
-                <marker date="1479224240000" expanded="true" signature="4094:4148" placeholder="..." />
-                <marker date="1479224240000" expanded="true" signature="4206:4305" placeholder="..." />
-                <marker date="1479224240000" expanded="true" signature="4206:4777" placeholder="..." />
-                <marker date="1479224240000" expanded="true" signature="5016:5026" placeholder="{...}" />
+                <element signature="n#style#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1479229932000" expanded="true" signature="2597:2651" placeholder="select Speak... Speaker" />
+                <marker date="1479229932000" expanded="true" signature="3491:3538" placeholder="SELECT count... Event" />
+                <marker date="1479229932000" expanded="true" signature="3491:3549" placeholder="SELECT count... Event" />
+                <marker date="1479229932000" expanded="true" signature="3491:3552" placeholder="SELECT count... Event" />
+                <marker date="1479229932000" expanded="true" signature="3702:3820" placeholder="SELECT count... Presentation" />
+                <marker date="1479229932000" expanded="true" signature="3702:3821" placeholder="SELECT count... Presentation" />
+                <marker date="1479229932000" expanded="true" signature="4005:4277" placeholder="..." />
+                <marker date="1479229932000" expanded="true" signature="4352:4420" placeholder="..." />
+                <marker date="1479229932000" expanded="true" signature="4352:5059" placeholder="..." />
+                <marker date="1479229932000" expanded="true" signature="4366:4420" placeholder="..." />
+                <marker date="1479229932000" expanded="true" signature="4478:4577" placeholder="..." />
+                <marker date="1479229932000" expanded="true" signature="4478:5049" placeholder="..." />
+                <marker date="1479229932000" expanded="true" signature="5288:5298" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conferenceDetail.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="survey.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/survey.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="conferenceDetail.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conferenceDetail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="83" column="28" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
+            <state relative-caret-position="284">
+              <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
               <folding>
-                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#3260#3299#0#PHP" expanded="true" />
-                <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1479224171000" expanded="true" signature="2039:2129" placeholder="select confe... " />
-                <marker date="1479224171000" expanded="true" signature="2039:2143" placeholder="select confe... " />
-                <marker date="1479224171000" expanded="true" signature="3320:3384" placeholder="select event... " />
-                <marker date="1479224171000" expanded="true" signature="3320:3431" placeholder="select * fro... Presentation" />
-                <marker date="1479224171000" expanded="true" signature="5464:5575" placeholder="select * fro... Presentation" />
-                <marker date="1479224171000" expanded="true" signature="6786:6796" placeholder="..." />
-                <marker date="1479224171000" expanded="true" signature="6819:6830" placeholder="..." />
-                <marker date="1479224171000" expanded="true" signature="6967:7482" placeholder="..." />
+                <element signature="e#3429#3468#0#PHP" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1479230492000" expanded="true" signature="2208:2298" placeholder="select confe... " />
+                <marker date="1479230492000" expanded="true" signature="2208:2312" placeholder="select confe... " />
+                <marker date="1479230492000" expanded="true" signature="3489:3553" placeholder="select event... " />
+                <marker date="1479230492000" expanded="true" signature="3489:3600" placeholder="select * fro... Presentation" />
+                <marker date="1479230492000" expanded="true" signature="4702:4921" placeholder="..." />
+                <marker date="1479230492000" expanded="true" signature="4715:4904" placeholder="..." />
+                <marker date="1479230492000" expanded="true" signature="4937:4997" placeholder="..." />
+                <marker date="1479230492000" expanded="true" signature="4950:4997" placeholder="..." />
+                <marker date="1479230492000" expanded="true" signature="5351:5537" placeholder="..." />
+                <marker date="1479230492000" expanded="true" signature="5364:5520" placeholder="..." />
+                <marker date="1479230492000" expanded="true" signature="5553:5596" placeholder="..." />
+                <marker date="1479230492000" expanded="true" signature="5633:5744" placeholder="select * fro... Presentation" />
+                <marker date="1479230492000" expanded="true" signature="5890:5953" placeholder="..." />
+                <marker date="1479230492000" expanded="true" signature="6955:6965" placeholder="..." />
+                <marker date="1479230492000" expanded="true" signature="6988:6999" placeholder="..." />
+                <marker date="1479230492000" expanded="true" signature="7136:7651" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -119,11 +141,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conferenceDetail.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="conferenceDetail.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/conferenceDetail.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-295">
-              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+            <state relative-caret-position="270">
+              <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -132,8 +154,8 @@
       <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="15">
+              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -142,10 +164,11 @@
       <file leaf-file-name="attractions.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/attractions.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+            <state relative-caret-position="314">
+              <caret line="258" column="46" selection-start-line="258" selection-start-column="46" selection-end-line="258" selection-end-column="46" />
               <folding>
                 <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
@@ -158,23 +181,6 @@
             <state relative-caret-position="-778">
               <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="importCsv.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/importCsv.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="82" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-              <folding>
-                <marker date="1479190950000" expanded="true" signature="714:802" placeholder="select Speak... Speaker" />
-                <marker date="1479190950000" expanded="true" signature="915:1059" placeholder="insert into Speaker... " />
-                <marker date="1479190950000" expanded="true" signature="1228:1317" placeholder="insert into Conference... " />
-                <marker date="1479190950000" expanded="true" signature="1408:1439" placeholder="select count... Conference" />
-                <marker date="1479190950000" expanded="true" signature="1695:1882" placeholder="insert into Event... " />
-                <marker date="1479190950000" expanded="true" signature="1973:1999" placeholder="select count... Event" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -195,16 +201,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/conference.css" />
-        <option value="$PROJECT_DIR$/attractions.html" />
         <option value="$PROJECT_DIR$/RouteFromHKAirport.html" />
-        <option value="$PROJECT_DIR$/css/common.css" />
         <option value="$PROJECT_DIR$/conference.html" />
         <option value="$PROJECT_DIR$/getEventInfo.php" />
+        <option value="$PROJECT_DIR$/css/conference.css" />
+        <option value="$PROJECT_DIR$/css/common.css" />
+        <option value="$PROJECT_DIR$/attractions.html" />
+        <option value="$PROJECT_DIR$/conference.php" />
+        <option value="$PROJECT_DIR$/conferenceDetail.php" />
         <option value="$PROJECT_DIR$/upload.php" />
         <option value="$PROJECT_DIR$/css/conferenceDetail.css" />
-        <option value="$PROJECT_DIR$/conferenceDetail.php" />
-        <option value="$PROJECT_DIR$/conference.php" />
-        <option value="$PROJECT_DIR$/css/conference.css" />
       </list>
     </option>
   </component>
@@ -309,6 +315,9 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/img" />
@@ -361,16 +370,16 @@
       <option name="presentableId" value="Default" />
       <updated>1479116320790</updated>
       <workItem from="1479116322064" duration="7952000" />
-      <workItem from="1479183374230" duration="26643000" />
+      <workItem from="1479183374230" duration="31103000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34595000" />
+    <option name="totallyTimeSpent" value="39055000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="26" y="24" width="1280" height="721" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21953125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -423,14 +432,14 @@
         <state relative-caret-position="465">
           <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
           <folding>
-            <marker date="1479214917000" expanded="true" signature="2244:2332" placeholder="select Speak... Speaker" />
-            <marker date="1479214917000" expanded="true" signature="2484:2628" placeholder="insert into Speaker... " />
-            <marker date="1479214917000" expanded="true" signature="2913:3029" placeholder="insert into Conference... " />
-            <marker date="1479214917000" expanded="true" signature="3139:3170" placeholder="select count... Conference" />
-            <marker date="1479214917000" expanded="true" signature="3466:3653" placeholder="insert into Event... " />
-            <marker date="1479214917000" expanded="true" signature="3782:3808" placeholder="select count... Event" />
-            <marker date="1479214917000" expanded="true" signature="4292:4377" placeholder="select speak... Speaker" />
-            <marker date="1479214917000" expanded="true" signature="4612:4866" placeholder="insert into Presentation... " />
+            <marker date="1479230935000" expanded="true" signature="2245:2333" placeholder="select Speak... Speaker" />
+            <marker date="1479230935000" expanded="true" signature="2485:2629" placeholder="insert into Speaker... " />
+            <marker date="1479230935000" expanded="true" signature="2914:3030" placeholder="insert into Conference... " />
+            <marker date="1479230935000" expanded="true" signature="3139:3170" placeholder="select count... Conference" />
+            <marker date="1479230935000" expanded="true" signature="3466:3653" placeholder="insert into Event... " />
+            <marker date="1479230935000" expanded="true" signature="3782:3808" placeholder="select count... Event" />
+            <marker date="1479230935000" expanded="true" signature="4292:4377" placeholder="select speak... Speaker" />
+            <marker date="1479230935000" expanded="true" signature="4612:4866" placeholder="insert into Presentation... " />
           </folding>
         </state>
       </provider>
@@ -450,19 +459,20 @@
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1479224240000" expanded="true" signature="2325:2379" placeholder="select Speak... Speaker" />
-            <marker date="1479224240000" expanded="true" signature="3219:3266" placeholder="SELECT count... Event" />
-            <marker date="1479224240000" expanded="true" signature="3219:3277" placeholder="SELECT count... Event" />
-            <marker date="1479224240000" expanded="true" signature="3219:3280" placeholder="SELECT count... Event" />
-            <marker date="1479224240000" expanded="true" signature="3430:3548" placeholder="SELECT count... Presentation" />
-            <marker date="1479224240000" expanded="true" signature="3430:3549" placeholder="SELECT count... Presentation" />
-            <marker date="1479224240000" expanded="true" signature="3733:4005" placeholder="..." />
-            <marker date="1479224240000" expanded="true" signature="4080:4148" placeholder="..." />
-            <marker date="1479224240000" expanded="true" signature="4080:4787" placeholder="..." />
-            <marker date="1479224240000" expanded="true" signature="4094:4148" placeholder="..." />
-            <marker date="1479224240000" expanded="true" signature="4206:4305" placeholder="..." />
-            <marker date="1479224240000" expanded="true" signature="4206:4777" placeholder="..." />
-            <marker date="1479224240000" expanded="true" signature="5016:5026" placeholder="{...}" />
+            <element signature="n#style#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1479229932000" expanded="true" signature="2597:2651" placeholder="select Speak... Speaker" />
+            <marker date="1479229932000" expanded="true" signature="3491:3538" placeholder="SELECT count... Event" />
+            <marker date="1479229932000" expanded="true" signature="3491:3549" placeholder="SELECT count... Event" />
+            <marker date="1479229932000" expanded="true" signature="3491:3552" placeholder="SELECT count... Event" />
+            <marker date="1479229932000" expanded="true" signature="3702:3820" placeholder="SELECT count... Presentation" />
+            <marker date="1479229932000" expanded="true" signature="3702:3821" placeholder="SELECT count... Presentation" />
+            <marker date="1479229932000" expanded="true" signature="4005:4277" placeholder="..." />
+            <marker date="1479229932000" expanded="true" signature="4352:4420" placeholder="..." />
+            <marker date="1479229932000" expanded="true" signature="4352:5059" placeholder="..." />
+            <marker date="1479229932000" expanded="true" signature="4366:4420" placeholder="..." />
+            <marker date="1479229932000" expanded="true" signature="4478:4577" placeholder="..." />
+            <marker date="1479229932000" expanded="true" signature="4478:5049" placeholder="..." />
+            <marker date="1479229932000" expanded="true" signature="5288:5298" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -498,17 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/attractions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/importCsv.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
@@ -532,14 +531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deleteData.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -548,19 +539,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload.php">
+    <entry file="file://$PROJECT_DIR$/css/conference.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-103">
-          <caret line="85" column="21" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
+        <state relative-caret-position="-778">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/attractions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="258" column="46" selection-start-line="258" selection-start-column="46" selection-end-line="258" selection-end-column="46" />
           <folding>
-            <marker date="1479214917000" expanded="true" signature="2244:2332" placeholder="select Speak... Speaker" />
-            <marker date="1479214917000" expanded="true" signature="2484:2628" placeholder="insert into Speaker... " />
-            <marker date="1479214917000" expanded="true" signature="2913:3029" placeholder="insert into Conference... " />
-            <marker date="1479214917000" expanded="true" signature="3139:3170" placeholder="select count... Conference" />
-            <marker date="1479214917000" expanded="true" signature="3466:3653" placeholder="insert into Event... " />
-            <marker date="1479214917000" expanded="true" signature="3782:3808" placeholder="select count... Event" />
-            <marker date="1479214917000" expanded="true" signature="4292:4377" placeholder="select speak... Speaker" />
-            <marker date="1479214917000" expanded="true" signature="4612:4866" placeholder="insert into Presentation... " />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -578,62 +580,87 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/conference.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="45" column="71" selection-start-line="45" selection-start-column="71" selection-end-line="45" selection-end-column="71" />
+        <state relative-caret-position="140">
+          <caret line="121" column="34" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1479224240000" expanded="true" signature="2325:2379" placeholder="select Speak... Speaker" />
-            <marker date="1479224240000" expanded="true" signature="3219:3266" placeholder="SELECT count... Event" />
-            <marker date="1479224240000" expanded="true" signature="3219:3277" placeholder="SELECT count... Event" />
-            <marker date="1479224240000" expanded="true" signature="3219:3280" placeholder="SELECT count... Event" />
-            <marker date="1479224240000" expanded="true" signature="3430:3548" placeholder="SELECT count... Presentation" />
-            <marker date="1479224240000" expanded="true" signature="3430:3549" placeholder="SELECT count... Presentation" />
-            <marker date="1479224240000" expanded="true" signature="3733:4005" placeholder="..." />
-            <marker date="1479224240000" expanded="true" signature="4080:4148" placeholder="..." />
-            <marker date="1479224240000" expanded="true" signature="4080:4787" placeholder="..." />
-            <marker date="1479224240000" expanded="true" signature="4094:4148" placeholder="..." />
-            <marker date="1479224240000" expanded="true" signature="4206:4305" placeholder="..." />
-            <marker date="1479224240000" expanded="true" signature="4206:4777" placeholder="..." />
-            <marker date="1479224240000" expanded="true" signature="5016:5026" placeholder="{...}" />
+            <element signature="n#style#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1479229932000" expanded="true" signature="2597:2651" placeholder="select Speak... Speaker" />
+            <marker date="1479229932000" expanded="true" signature="3491:3538" placeholder="SELECT count... Event" />
+            <marker date="1479229932000" expanded="true" signature="3491:3549" placeholder="SELECT count... Event" />
+            <marker date="1479229932000" expanded="true" signature="3491:3552" placeholder="SELECT count... Event" />
+            <marker date="1479229932000" expanded="true" signature="3702:3820" placeholder="SELECT count... Presentation" />
+            <marker date="1479229932000" expanded="true" signature="3702:3821" placeholder="SELECT count... Presentation" />
+            <marker date="1479229932000" expanded="true" signature="4005:4277" placeholder="..." />
+            <marker date="1479229932000" expanded="true" signature="4352:4420" placeholder="..." />
+            <marker date="1479229932000" expanded="true" signature="4352:5059" placeholder="..." />
+            <marker date="1479229932000" expanded="true" signature="4366:4420" placeholder="..." />
+            <marker date="1479229932000" expanded="true" signature="4478:4577" placeholder="..." />
+            <marker date="1479229932000" expanded="true" signature="4478:5049" placeholder="..." />
+            <marker date="1479229932000" expanded="true" signature="5288:5298" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/conference.css">
+    <entry file="file://$PROJECT_DIR$/survey.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-778">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/conferenceDetail.css">
+    <entry file="file://$PROJECT_DIR$/upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-295">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="195">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding>
+            <marker date="1479230935000" expanded="true" signature="2245:2333" placeholder="select Speak... Speaker" />
+            <marker date="1479230935000" expanded="true" signature="2485:2629" placeholder="insert into Speaker... " />
+            <marker date="1479230935000" expanded="true" signature="2914:3030" placeholder="insert into Conference... " />
+            <marker date="1479230935000" expanded="true" signature="3139:3170" placeholder="select count... Conference" />
+            <marker date="1479230935000" expanded="true" signature="3466:3653" placeholder="insert into Event... " />
+            <marker date="1479230935000" expanded="true" signature="3782:3808" placeholder="select count... Event" />
+            <marker date="1479230935000" expanded="true" signature="4292:4377" placeholder="select speak... Speaker" />
+            <marker date="1479230935000" expanded="true" signature="4612:4866" placeholder="insert into Presentation... " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conferenceDetail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="83" column="28" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
+        <state relative-caret-position="284">
+          <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
           <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#3260#3299#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1479224171000" expanded="true" signature="2039:2129" placeholder="select confe... " />
-            <marker date="1479224171000" expanded="true" signature="2039:2143" placeholder="select confe... " />
-            <marker date="1479224171000" expanded="true" signature="3320:3384" placeholder="select event... " />
-            <marker date="1479224171000" expanded="true" signature="3320:3431" placeholder="select * fro... Presentation" />
-            <marker date="1479224171000" expanded="true" signature="5464:5575" placeholder="select * fro... Presentation" />
-            <marker date="1479224171000" expanded="true" signature="6786:6796" placeholder="..." />
-            <marker date="1479224171000" expanded="true" signature="6819:6830" placeholder="..." />
-            <marker date="1479224171000" expanded="true" signature="6967:7482" placeholder="..." />
+            <element signature="e#3429#3468#0#PHP" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1479230492000" expanded="true" signature="2208:2298" placeholder="select confe... " />
+            <marker date="1479230492000" expanded="true" signature="2208:2312" placeholder="select confe... " />
+            <marker date="1479230492000" expanded="true" signature="3489:3553" placeholder="select event... " />
+            <marker date="1479230492000" expanded="true" signature="3489:3600" placeholder="select * fro... Presentation" />
+            <marker date="1479230492000" expanded="true" signature="4702:4921" placeholder="..." />
+            <marker date="1479230492000" expanded="true" signature="4715:4904" placeholder="..." />
+            <marker date="1479230492000" expanded="true" signature="4937:4997" placeholder="..." />
+            <marker date="1479230492000" expanded="true" signature="4950:4997" placeholder="..." />
+            <marker date="1479230492000" expanded="true" signature="5351:5537" placeholder="..." />
+            <marker date="1479230492000" expanded="true" signature="5364:5520" placeholder="..." />
+            <marker date="1479230492000" expanded="true" signature="5553:5596" placeholder="..." />
+            <marker date="1479230492000" expanded="true" signature="5633:5744" placeholder="select * fro... Presentation" />
+            <marker date="1479230492000" expanded="true" signature="5890:5953" placeholder="..." />
+            <marker date="1479230492000" expanded="true" signature="6955:6965" placeholder="..." />
+            <marker date="1479230492000" expanded="true" signature="6988:6999" placeholder="..." />
+            <marker date="1479230492000" expanded="true" signature="7136:7651" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/conferenceDetail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>

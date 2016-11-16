@@ -26,6 +26,7 @@ for($i=0;$i<count($target_files);$i++){
 // Check if $uploadOk is set to 0 by an error
     if ($uploadOk == 0) {
         echo "Sorry, your file was not uploaded.";
+//        continue;
         exit;
 // if everything is ok, try to upload file
     } else {
@@ -38,7 +39,6 @@ for($i=0;$i<count($target_files);$i++){
 }
 }
 header("Location: ./conference.php");
-//确保重定向后，后续代码不会被执行
 exit;
 
 function import($fileaddr){
@@ -83,7 +83,7 @@ function import($fileaddr){
     $sql="insert into Conference(name,date,duration) values('$Conference_info[0]','$Conference_info[1]','$Conference_info[2]');";
     mysql_query($sql) or die(mysql_error());
     if(mysql_error()){
-        echo"导入失败！"; 
+        echo"导入失败！";
     }
     $sql="select count(*) from Conference;";
     $ConferenceID_t=mysql_query($sql) or die(mysql_error());

@@ -137,7 +137,9 @@ img.photo {
         <a href="#" class="n1"><div onclick="cc()">Introduction</div></a>
         <a href="http://www.discoverhongkong.com/uk/see-do/great-outdoors/outlying-islands/cheung-chau/index.jsp" class="n1"><div>Website Link</div></a>
     </div>
-    </div> 
+    </div>
+<a id="gotoTop" onclick="gotoTop()" style="display:none;position: fixed;bottom: 15%;right: 3%;width: 50px;height: 50px;text-align: center "><span class="glyphicon glyphicon-chevron-up"></span></a>
+
     <div class="Intro" id="vpIntro">
         <h2 style="text-align: center;">Victoria Peak</h2>
         <img class="photo" src="img/peak.png">
@@ -213,6 +215,7 @@ img.photo {
         <p>This pavilion-style temple on the island of Cheung Chau was built in 1973 and houses an eight-foot statue of Kwan Kung, the Han dynasty (206 BC to 220 AD) general who later became deified. The statue is made from an entire camphor tree. In front of the pavilion is an incense burner with two dragons. 
         Come here in March when the heady aroma of incense mingles with the sweet smell of cherry blossom.</p>
     </div>
+<script src="jquery-3.1.1.min.js"></script>
     <script>
     function vp(){
         clearAll();
@@ -240,6 +243,20 @@ img.photo {
         document.getElementById("ttIntro").style = "visibility: hidden;";
         document.getElementById("npIntro").style = "visibility: hidden;";
         document.getElementById("ccIntro").style = "visibility: hidden;";
+    }
+    $(window).scroll(function(){
+        var min_height = 300;
+        //获取窗口的滚动条的垂直位置
+        var s = $(window).scrollTop();
+        //当窗口的滚动条的垂直位置大于页面的最小高度时，让返回顶部元素渐现，否则渐隐
+        if( s > min_height){
+            $("#gotoTop").fadeIn(100);
+        }else{
+            $("#gotoTop").fadeOut(200);
+        };
+    });
+    function gotoTop() {
+        $('html,body').animate({scrollTop:0},400);
     }
     </script>
 </body> </html>

@@ -25,7 +25,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="./conference.php">Home <span class="sr-only">(current)</span></a></li>
         <li><a href="./attractions.html">Attractions</a></li>
         <li><a href="./RouteFromHKAirport.html">Route</a></li>
         <li><a href="#">About</a></li>
@@ -41,6 +41,9 @@
 </nav>
 <div class="back">
     <a href="./conference.php"><span class="glyphicon glyphicon-chevron-left"></span></a>
+</div>
+<div class="feedback">
+    <a href="./survey.php?conferenceId=<?echo $_GET['conferenceId']?>"><span class="glyphicon glyphicon-pencil"></span></a>
 </div>
 <?php
 $conferenceId = $_GET['conferenceId'];

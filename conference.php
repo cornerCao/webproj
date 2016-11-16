@@ -48,6 +48,7 @@
     <input disabled="disabled" class="submitInput" type="submit" value="Upload" name="submit">
 	</form>
 </div>
+<a id="gotoTop" onclick="gotoTop()" style="display:none;position: fixed;bottom: 15%;right: 3%;width: 50px;height: 50px;text-align: center;padding-top: 15px;color:white;background-color: #337ab7;border-radius: 5px "><span class="glyphicon glyphicon-chevron-up"></span></a>
 <?
 $connect=mysql_connect("mysql.comp.polyu.edu.hk","16027789x","jsiyppoo") or die("链接数据库失败！");
 //连接数据库(test)
@@ -112,9 +113,18 @@ $result=mysql_query($sql) or die(mysql_error());
   var chooseFile = function () {
       $('#fileToUpload').click();
   };
-
-    $(function () {
-        $('#fileToUpload').change(function () {
+  $(window).scroll(function(){
+      var min_height = 300;
+      //获取窗口的滚动条的垂直位置
+      var s = $(window).scrollTop();
+      //当窗口的滚动条的垂直位置大于页面的最小高度时，让返回顶部元素渐现，否则渐隐
+      if( s > min_height){
+          $("#gotoTop").fadeIn(200);
+      }else{
+          $("#gotoTop").fadeOut(200);
+      };
+  });
+   $('#fileToUpload').change(function () {
             if (typeof (FileReader) != "undefined") {
                 var filePrev = $('#filenamePrev');
                 filePrev.html("");
@@ -131,7 +141,9 @@ $result=mysql_query($sql) or die(mysql_error());
             $('input.submitInput').attr("disabled",false);
             $('input.submitInput').addClass("chooseDiv");
         })
-    })
+    function gotoTop() {
+        $('html,body').animate({scrollTop:0},400);
+    }
 </script>
 
 </body>
