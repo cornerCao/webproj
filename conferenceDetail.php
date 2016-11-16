@@ -94,7 +94,7 @@ $result=mysql_query($sql) or die(mysql_error());
 <? while ($event = mysql_fetch_assoc($result)) {?>
 <div class="eventCell">
 <!--<div class="eventTable table-responsive">-->
-    <table class="table" style="margin-bottom: 0px">
+    <table class="table table-responsive" style="margin-bottom: 0px">
         <thead>
         <tr>
             <th>Event</th>
@@ -116,7 +116,7 @@ $result=mysql_query($sql) or die(mysql_error());
         </tr>
         </tbody>
     </table>
-    <table class="table" style="margin-top:0;margin-left: 16%;width: 84%">
+    <table class="table table-responsive" style="margin-top:0;margin-left: 12%;width: 88%">
         <thead>
         <tr>
             <th>Presentation</th><th>Title</th><th>Speaker</th><th>Beginning_time</th><th>Ending_time</th><th>Biography</th><th>Abstract</th>

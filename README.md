@@ -1,6 +1,6 @@
 # webproj
 ##url
-http://www2.comp.polyu.edu.hk/~16010922x/proj/conference.html
+http://www2.comp.polyu.edu.hk/~16010922x/proj/conference.php
 ##Remote develop
 - PhpStorm Deployment 
 
