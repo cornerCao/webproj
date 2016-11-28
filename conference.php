@@ -26,6 +26,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="./presentation.php">Presentations</a></li>
           <li><a href="./speakers.php">Speakers</a></li>
           <li><a href="./attractions.html">Attractions</a></li>
         <li><a href="./RouteFromHKAirport.html">Route</a></li>

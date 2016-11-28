@@ -6,7 +6,7 @@
     <style>
         .infoTable{
             margin: 70px auto;
-            width: 500px;
+            /*width: 550px;*/
         }
 
         .fourCells{
