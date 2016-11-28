@@ -46,15 +46,18 @@
 </div>
 
 <?php
-//$eventId = $_GET['eventId'];
-//$connect=mysql_connect("mysql.comp.polyu.edu.hk","16027789x","jsiyppoo") or die("链接数据库失败！");
-////连接数据库(test)
-//mysql_select_db("16027789x",$connect) or die (mysql_error());
-//$sql="select eventId,title,date,beginning_time,ending_time,venue from Event where eventId='$eventId';";
-//$result=mysql_query($sql) or die(mysql_error());
+$eventId =isset($_GET['eventId'])? $_GET['eventId']:null;
+$connect=mysql_connect("mysql.comp.polyu.edu.hk","16027789x","jsiyppoo") or die("链接数据库失败！");
+//连接数据库(test)
+mysql_select_db("16027789x",$connect) or die (mysql_error());
+if($eventId){
+    $sql="select * from presentation,authorsabstracts where presentation.eventID = $eventId and presentation.speakerID = authorsabstracts.authorID;";
+}else{
+    $sql = "select * from presentation,authorsabstracts;";
+}
+$result=mysql_query($sql) or die(mysql_error());
 ?>
 <div class="preTable">
-    <?// while ($event = mysql_fetch_assoc($result)) {?>
     <div class="preCell">
         <!--<div class="eventTable table-responsive">-->
         <table class="table table-responsive" style="margin-bottom: 0px">
@@ -67,26 +70,28 @@
                 <th>Date</th>
                 <th>Begining_time</th>
                 <th>Ending_time</th>
-                <th>Abstract</th>
+                <th>Biography</th>
             </tr>
             </thead>
             <tbody>
+            <? while ($pre = mysql_fetch_assoc($result)) {?>
             <tr>
-                <td>1570017439</td>
-                <td>a</td>
-                <td>a</td>
-                <td>a</td>
-                <td>b</td>
-                <td>c</td>
-                <td>d</td>
-                <td>e</td>
+                <td><?echo $pre['abstractID']?></td>
+                <td><?echo $pre['type']?></td>
+                <td><?echo $pre['title']?></td>
+                <td><a href="speakerDetail.php?speakerId=<?echo $pre['speakerID'];?>"><?echo $pre['firstname'].' '.$pre['lastname']?></a></td>
+                <td><?echo $pre['date']?></td>
+                <td><?echo $pre['beginTime']?></td>
+                <td><?echo $pre['endTime']?></td>
+                <td><?echo $pre['biography']?></td>
             </tr>
+                <?
+            }
+            ?>
             </tbody>
         </table>
     </div>
-    <?
-    //}
-    ?>
+
 </div>
 
 <!--</div>-->

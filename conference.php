@@ -56,29 +56,32 @@
 </div>
 <a id="gotoTop" onclick="gotoTop()" style="display:none;position: fixed;bottom: 15%;right: 3%;width: 50px;height: 50px;text-align: center;padding-top: 15px;color:white;background-color: #337ab7;border-radius: 5px "><span class="glyphicon glyphicon-chevron-up"></span></a>
 <?
-//$connect=mysql_connect("mysql.comp.polyu.edu.hk","16027789x","jsiyppoo") or die("链接数据库失败！");
-////连接数据库(test)
-//mysql_select_db("16027789x",$connect) or die (mysql_error());
-//$sql="select eventID,name,date,duration from event;";
-//$result=mysql_query($sql) or die(mysql_error());
-//var_dump($events);
+$connect=mysql_connect("mysql.comp.polyu.edu.hk","16027789x","jsiyppoo") or die("链接数据库失败！");
+//连接数据库(test)
+mysql_select_db("16027789x",$connect) or die (mysql_error());
+$sql="select * from events order by date ASC;";
+$result=mysql_query($sql) or die(mysql_error());
 ?>
 <div class="event-list">
     <ul class="event-items">
-<!--        --><?// while ($event = mysql_fetch_assoc($result)) {?>
+        <? while ($event = mysql_fetch_assoc($result)) {?>
         <li >
             <div class="event-info">
                 <a class="info-right">
                     <span class="glyphicon glyphicon-map-marker"></span></br>
-                    <span>Silverbox 1-3, Hotel ICON</span>
+                    <span><?echo $event['venue']?></span>
                 </a>
                 <div class="info-top">
-                    <span>3/11/2014</span>
+                    <span><?echo $event['date']?></span>
                 </div>
                 <h4 class="title">
-                    <a href="presentation.php?eventId=1">
-                        aaa
+                    <?if(strpos($event['title'],"Session")){?>
+                    <a href="presentation.php?eventId=<?echo $event['eventID'];?>">
+                        <?echo $event['title']?>
                     </a>
+                    <?}else{
+                        echo $event['title'];
+                    }?>
                 </h4>
 <!--                --><?php
 //                $eventId = $event['eventID'];
@@ -91,12 +94,12 @@
 //                ?>
 
                 <div class="info-footer">
-                    <span title="time" class="glyphicon glyphicon-time"></span><span>7:45</span><span>-</span><span>8:30</span></span>
+                    <span title="time" class="glyphicon glyphicon-time"></span><span><?echo $event['beginTime']?></span><span>-</span><span><?echo $event['endTime']?></span></span>
                 </div>
 
             </div>
         </li>
-<!--        --><?//}?>
+        <?}?>
 
     </ul>
 </div>
