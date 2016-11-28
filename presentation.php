@@ -53,7 +53,7 @@ mysql_select_db("16027789x",$connect) or die (mysql_error());
 if($eventId){
     $sql="select * from presentation,authorsabstracts where presentation.eventID = $eventId and presentation.speakerID = authorsabstracts.authorID;";
 }else{
-    $sql = "select * from presentation,authorsabstracts;";
+    $sql = "select * from presentation JOIN authorsabstracts where presentation.speakerID = authorsabstracts.authorID;";
 }
 $result=mysql_query($sql) or die(mysql_error());
 ?>
