@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title>webproj</title>
     <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/conference.css" rel="stylesheet">
+    <link href="css/event.css" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
 </head>
 <body>
@@ -26,7 +26,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="./attractions.html">Attractions</a></li>
+          <li><a href="./speakers.php">Speakers</a></li>
+          <li><a href="./attractions.html">Attractions</a></li>
         <li><a href="./RouteFromHKAirport.html">Route</a></li>
         <li><a href="#">About</a></li>
       </ul>
@@ -48,47 +49,53 @@
     <input disabled="disabled" class="submitInput" type="submit" value="Upload" name="submit">
 	</form>
 </div>
+
+<div class="feedback">
+    <a href="./survey.php?conferenceId=<?echo $_GET['conferenceId']?>"><span class="glyphicon glyphicon-pencil"></span></a>
+</div>
 <a id="gotoTop" onclick="gotoTop()" style="display:none;position: fixed;bottom: 15%;right: 3%;width: 50px;height: 50px;text-align: center;padding-top: 15px;color:white;background-color: #337ab7;border-radius: 5px "><span class="glyphicon glyphicon-chevron-up"></span></a>
 <?
-$connect=mysql_connect("mysql.comp.polyu.edu.hk","16027789x","jsiyppoo") or die("链接数据库失败！");
-//连接数据库(test)
-mysql_select_db("16027789x",$connect) or die (mysql_error());
-$sql="select conferenceID,name,date,duration from Conference;";
-$result=mysql_query($sql) or die(mysql_error());
-//var_dump($conferences);
+//$connect=mysql_connect("mysql.comp.polyu.edu.hk","16027789x","jsiyppoo") or die("链接数据库失败！");
+////连接数据库(test)
+//mysql_select_db("16027789x",$connect) or die (mysql_error());
+//$sql="select eventID,name,date,duration from event;";
+//$result=mysql_query($sql) or die(mysql_error());
+//var_dump($events);
 ?>
-<div class="conference-list">
-    <ul class="conference-items">
-        <? while ($conference = mysql_fetch_assoc($result)) {?>
+<div class="event-list">
+    <ul class="event-items">
+<!--        --><?// while ($event = mysql_fetch_assoc($result)) {?>
         <li >
-            <div class=" confernece-info">
+            <div class="event-info">
+                <a class="info-right">
+                    <span class="glyphicon glyphicon-map-marker"></span></br>
+                    <span>Silverbox 1-3, Hotel ICON</span>
+                </a>
                 <div class="info-top">
-                    <span> <?echo $conference['date'] ?> </span>
-                    <em>·</em>
-                    <span><?echo $conference['duration'] ?>day</span>
+                    <span>3/11/2014</span>
                 </div>
                 <h4 class="title">
-                    <a href="./conferenceDetail.php?conferenceId=<?echo $conference['conferenceID']?>">
-                        <?echo $conference['name']?>
+                    <a href="presentation.php?eventId=1">
+                        aaa
                     </a>
                 </h4>
-                <?php
-                $conferenceId = $conference['conferenceID'];
-                $sql ="SELECT count(*) FROM Event where conferenceID='$conferenceId'";
-                $r = mysql_query($sql) or die(mysql_error());
-                $eventNum = mysql_fetch_array($r,MYSQLI_NUM);
-                $sql ="SELECT count(*) FROM Presentation JOIN Event where Presentation.eventID=Event.eventID and conferenceID='$conferenceId' ";
-                $r = mysql_query($sql) or die(mysql_error());
-                $preNum = mysql_fetch_array($r,MYSQLI_NUM);
-                ?>
+<!--                --><?php
+//                $eventId = $event['eventID'];
+//                $sql ="SELECT count(*) FROM Event where eventID='$eventId'";
+//                $r = mysql_query($sql) or die(mysql_error());
+//                $eventNum = mysql_fetch_array($r,MYSQLI_NUM);
+//                $sql ="SELECT count(*) FROM Presentation JOIN Event where Presentation.eventID=Event.eventID and eventID='$eventId' ";
+//                $r = mysql_query($sql) or die(mysql_error());
+//                $preNum = mysql_fetch_array($r,MYSQLI_NUM);
+//                ?>
+
                 <div class="info-footer">
-                    <span title="event number" class="glyphicon glyphicon-list"><span><?echo $eventNum[0]?></span></span>
-                    <span title="presentaion number" class="glyphicon glyphicon-check"><span><?echo $preNum[0]?></span></span>
+                    <span title="time" class="glyphicon glyphicon-time"></span><span>7:45</span><span>-</span><span>8:30</span></span>
                 </div>
 
             </div>
         </li>
-        <?}?>
+<!--        --><?//}?>
 
     </ul>
 </div>

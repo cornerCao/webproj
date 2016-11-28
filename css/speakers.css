@@ -1,0 +1,29 @@
+.speaker-list{
+    background-color: white;
+    margin: 70px auto;
+    max-width: 500px;
+}
+.speaker-items{
+    float: none;
+    margin: 0 auto;
+    padding-top: 10px;
+    list-style: none;
+
+}
+
+.speaker-items > li{
+    position: relative;
+    margin: 0 0 17px 0;
+    border-bottom: 1px dashed #D9D9D9;
+    padding-bottom: 17px;
+}
+.info-right{
+    float: right;
+    margin-right: 10px;
+    text-align: center;
+
+}
+
+.info-right > span:first-child{
+    font-size: 22px;
+}

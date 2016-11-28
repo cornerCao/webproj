@@ -23,12 +23,12 @@
     border: solid 1px black;
     border-radius: 5px;
 }
-.conference-list{
+.event-list{
     background-color: white;
     margin: 70px auto;
     max-width: 740px;
 }
-.conference-items{
+.event-items{
     float: none;
     margin: 0 auto;
     padding-top: 10px;
@@ -36,7 +36,7 @@
 
 }
 
-.conference-items > li{
+.event-items > li{
     position: relative;
     margin: 0 0 17px 0;
     border-bottom: 1px dashed #D9D9D9;
@@ -48,17 +48,36 @@
     margin: 8px 0;
 }
 
+.info-right{
+    float: right;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.info-right > span:first-child{
+    font-size: 22px;
+}
+
 .info-footer{
-    font-size: 13px;
+    font-size: 15px;
     line-height: 20px;
 }
 
-.info-footer > span {
-    margin: 0 5px 0 12px;
+.info-footer span{
+    margin-left: 4px;
 }
 
-.info-footer > span > span{
-    margin-left: 4px;
+.feedback{
+    position: fixed;
+    top:70px;
+    right:5px;
+    padding: 7px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    text-align: center;
+    font-size: 20px;
+
 }
 
 

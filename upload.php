@@ -32,12 +32,12 @@ for($i=0;$i<count($target_files);$i++){
     } else {
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"][$i], $target_file)) {
             $message .= "The file ". basename( $target_files[$i]). " has been uploaded.</br>";
-            import($target_file);
         } else {
             echo "Sorry, there was an error uploading your file.";
         }
 }
 }
+
 header("Location: ./conference.php");
 exit;
 
