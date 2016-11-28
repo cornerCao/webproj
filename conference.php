@@ -52,7 +52,7 @@
 </div>
 
 <div class="feedback">
-    <a href="./survey.php?conferenceId=<?echo $_GET['conferenceId']?>"><span class="glyphicon glyphicon-pencil"></span></a>
+    <a href="./survey.php"><span class="glyphicon glyphicon-pencil"></span></a>
 </div>
 <a id="gotoTop" onclick="gotoTop()" style="display:none;position: fixed;bottom: 15%;right: 3%;width: 50px;height: 50px;text-align: center;padding-top: 15px;color:white;background-color: #337ab7;border-radius: 5px "><span class="glyphicon glyphicon-chevron-up"></span></a>
 <?
