@@ -94,7 +94,7 @@ $result=mysql_query($sql) or die(mysql_error());
 //                ?>
 
                 <div class="info-footer">
-                    <span title="time" class="glyphicon glyphicon-time"></span><span><?echo substr($event['beginTime'],0,strrpos($event['beginTime'],':'));?></span><span>-</span><span><?echo substr($event['beginTime'],0,strrpos($event['beginTime'],':'));?></span></span>
+                    <span title="time" class="glyphicon glyphicon-time"></span><span><?echo substr($event['beginTime'],0,strrpos($event['beginTime'],':'));?></span><span>-</span><span><?echo substr($event['endTime'],0,strrpos($event['endTime'],':'));?></span></span>
                 </div>
 
             </div>
