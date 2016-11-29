@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b690fe7-0ba5-4cfa-894b-e7adefe90562" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/footer.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/nav.html" afterPath="$PROJECT_DIR$/nav.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/attractions.html" afterPath="$PROJECT_DIR$/attractions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteFromHKAirport.php" afterPath="$PROJECT_DIR$/RouteFromHKAirport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Speakers.php" afterPath="$PROJECT_DIR$/Speakers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conference.php" afterPath="$PROJECT_DIR$/conference.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eventDetail.php" afterPath="$PROJECT_DIR$/eventDetail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preDetail.php" afterPath="$PROJECT_DIR$/preDetail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/presentation.php" afterPath="$PROJECT_DIR$/presentation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search.php" afterPath="$PROJECT_DIR$/search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav.php" afterPath="$PROJECT_DIR$/nav.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/speakerDetail.php" afterPath="$PROJECT_DIR$/speakerDetail.php" />
     </list>
     <ignored path="webproj.iws" />
@@ -34,6 +27,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="conference.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/conference.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+              <folding>
+                <marker date="1480422669000" expanded="true" signature="1388:1426" placeholder="select * fro... events" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="presentation.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/presentation.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -47,39 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deleteData.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deleteData.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="eventDetail.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eventDetail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-91">
-              <caret line="80" column="2" selection-start-line="80" selection-start-column="2" selection-end-line="80" selection-end-column="2" />
-              <folding>
-                <marker date="1480422326000" expanded="true" signature="126:199" placeholder="select title... " />
-                <marker date="1480422326000" expanded="true" signature="2077:2170" placeholder="select disti... " />
-                <marker date="1480422326000" expanded="true" signature="2314:2323" placeholder="..." />
-                <marker date="1480422326000" expanded="true" signature="2402:2411" placeholder="..." />
-                <marker date="1480422326000" expanded="true" signature="2437:2446" placeholder="..." />
-                <marker date="1480422326000" expanded="true" signature="2522:2550" placeholder="..." />
-                <marker date="1480422326000" expanded="true" signature="2622:2636" placeholder="..." />
-                <marker date="1480422326000" expanded="true" signature="2649:2682" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RouteFromHKAirport.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RouteFromHKAirport.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
+            <state relative-caret-position="2175">
               <caret line="145" column="8" selection-start-line="145" selection-start-column="8" selection-end-line="145" selection-end-column="8" />
               <folding />
             </state>
@@ -96,26 +72,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="speakerDetail.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="speakerDetail.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/speakerDetail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-556">
-              <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+            <state relative-caret-position="135">
+              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="66" selection-end-column="2" />
               <folding>
-                <marker date="1480422549000" expanded="true" signature="166:282" placeholder="select first... authorsabstracts" />
-                <marker date="1480422549000" expanded="true" signature="2000:2194" placeholder="..." />
-                <marker date="1480422549000" expanded="true" signature="2014:2072" placeholder="select title... presentation" />
+                <marker date="1480424152000" expanded="true" signature="142:258" placeholder="select first... authorsabstracts" />
+                <marker date="1480424152000" expanded="true" signature="1976:2170" placeholder="..." />
+                <marker date="1480424152000" expanded="true" signature="1990:2048" placeholder="select title... presentation" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -149,6 +115,28 @@
                 <marker date="1480419289000" expanded="true" signature="2146:2155" placeholder="..." />
                 <marker date="1480419289000" expanded="true" signature="2231:2248" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="attractions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/attractions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="92" column="10" selection-start-line="92" selection-start-column="10" selection-end-line="92" selection-end-column="10" />
+              <folding>
+                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nav.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nav.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -201,14 +189,15 @@
         <option value="$PROJECT_DIR$/nav.html" />
         <option value="$PROJECT_DIR$/eventDetail.php" />
         <option value="$PROJECT_DIR$/presentation.php" />
-        <option value="$PROJECT_DIR$/nav.php" />
         <option value="$PROJECT_DIR$/search.php" />
-        <option value="$PROJECT_DIR$/speakerDetail.php" />
         <option value="$PROJECT_DIR$/speakers.php" />
         <option value="$PROJECT_DIR$/preDetail.php" />
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/conference.php" />
         <option value="$PROJECT_DIR$/RouteFromHKAirport.php" />
+        <option value="$PROJECT_DIR$/speakerDetail.php" />
+        <option value="$PROJECT_DIR$/attractions.php" />
+        <option value="$PROJECT_DIR$/nav.php" />
       </list>
     </option>
   </component>
@@ -268,20 +257,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webproj" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webproj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webproj" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -360,15 +335,15 @@
       <workItem from="1479626669232" duration="276000" />
       <workItem from="1480336284582" duration="10416000" />
       <workItem from="1480389601226" duration="2423000" />
-      <workItem from="1480419326422" duration="2536000" />
+      <workItem from="1480419326422" duration="3696000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57976000" />
+    <option name="totallyTimeSpent" value="59136000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="721" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="721" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15546875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -406,8 +381,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/attractions.html</url>
-          <line>120</line>
+          <url>file://$PROJECT_DIR$/attractions.php</url>
+          <line>90</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -475,18 +450,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/attractions.html">
+    <entry file="file://$PROJECT_DIR$/attractions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3615">
           <caret line="258" column="46" selection-start-line="258" selection-start-column="46" selection-end-line="258" selection-end-column="46" />
           <folding>
-            <element signature="n#style#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h2#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h2#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h2#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h2#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h2#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -618,22 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/attractions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3690">
-          <caret line="250" column="23" selection-start-line="250" selection-start-column="23" selection-end-line="250" selection-end-column="23" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h2#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h2#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h2#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h2#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h2#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -713,29 +666,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conference.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="76" column="21" selection-start-line="76" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding>
-            <marker date="1480422669000" expanded="true" signature="1388:1426" placeholder="select * fro... events" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -832,14 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RouteFromHKAirport.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="145" column="8" selection-start-line="145" selection-start-column="8" selection-end-line="145" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/search.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-166">
@@ -848,14 +775,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/RouteFromHKAirport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2175">
+          <caret line="145" column="8" selection-start-line="145" selection-start-column="8" selection-end-line="145" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/speakerDetail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-556">
-          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        <state relative-caret-position="135">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="66" selection-end-column="2" />
           <folding>
-            <marker date="1480422549000" expanded="true" signature="166:282" placeholder="select first... authorsabstracts" />
-            <marker date="1480422549000" expanded="true" signature="2000:2194" placeholder="..." />
-            <marker date="1480422549000" expanded="true" signature="2014:2072" placeholder="select title... presentation" />
+            <marker date="1480424152000" expanded="true" signature="142:258" placeholder="select first... authorsabstracts" />
+            <marker date="1480424152000" expanded="true" signature="1976:2170" placeholder="..." />
+            <marker date="1480424152000" expanded="true" signature="1990:2048" placeholder="select title... presentation" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/attractions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="92" column="10" selection-start-line="92" selection-start-column="10" selection-end-line="92" selection-end-column="10" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conference.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+          <folding>
+            <marker date="1480422669000" expanded="true" signature="1388:1426" placeholder="select * fro... events" />
           </folding>
         </state>
       </provider>

@@ -80,39 +80,9 @@ img.photo {
 </style> 
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">COMP3421</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="conference.php">Home</a></li>
-                <li><a href="search.php">Search</a></li>
-                <li><a href="./presentation.php">Presentations</a></li>
-                <li><a href="./speakers.php">Speakers</a></li>
-                <li class="active"><a href="#">Attractions <span class="sr-only">(current)</span></a></li>
-                <li><a href="RouteFromHKAirport.php">Route</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-            <form class="navbar-form navbar-right">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
+<?$active="attractions";
+include_once "nav.php";
+?>
 <a id="gotoTop" onclick="gotoTop()" style="display:none;position: fixed;bottom: 15%;right: 3%;width: 50px;height: 50px;text-align: center "><span class="glyphicon glyphicon-chevron-up"></span></a>
 <div class="menu">
     <div style="display: block;">Attractions</div>

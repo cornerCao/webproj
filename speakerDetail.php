@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php include_once("nav.php");
+<?php 
 require_once("connect.php");
 $uri=$_SERVER["REQUEST_URI"];
 $idloc=strpos($uri,"id=")+3;
