@@ -64,7 +64,8 @@ $result=mysql_query($sql) or die(mysql_error());
             <div class="event-info">
                 <a href="RouteFromHKAirport.php?venue=<?$pos = substr($event['venue'],strpos($event['venue'], ',')+2); echo $pos;?>" class="info-right">
                     <span class="glyphicon glyphicon-map-marker"></span></br>
-                    <span><?echo $event['venue']?></span>
+                    <span><?echo substr($event['venue'],0,strpos($event['venue'], ',')).',';?></span></br>
+                    <span><?echo substr($event['venue'],strpos($event['venue'], ',')+2);?></span>
                 </a>
                 <div class="info-top">
                     <span><?echo $event['date']?></span>
