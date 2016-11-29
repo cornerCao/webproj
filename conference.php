@@ -9,34 +9,9 @@
     <link href="css/common.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">COMP3421</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-	      <li><a href="search.php">Search</a></li>
-          <li><a href="./presentation.php">Presentations</a></li>
-          <li><a href="./speakers.php">Speakers</a></li>
-          <li><a href="./attractions.html">Attractions</a></li>
-        <li><a href="RouteFromHKAirport.php">Route</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
+<?$active="conference";
+    include_once "nav.php";
+?>
 <div class="uploadCSVDiv">
 	<form action="upload.php" method="post" enctype="multipart/form-data">
     <input required="required" multiple type="file" name="fileToUpload[]" id="fileToUpload" style="display: none">
@@ -99,20 +74,7 @@ $result=mysql_query($sql) or die(mysql_error());
 
     </ul>
 </div>
-<footer>
-    <address>
-        COMP PolyU HongKong<br/>
-        <abbr title="Phone">P:</abbr>+852xxxxxxxx
-    </address>
-    <address>
-        <strong>COMP3421</strong><br/>
-        <strong>Members:</strong><br/>
-        <span title="email">Anna:</span><a href="mailto:anna.huang@connect.polyu.hk">anna.huang@connect.polyu.hk</a><br/>
-        <span title="email">Laura:</span><a href="mailto:anna.huang@connect.polyu.hk">anna.huang@connect.polyu.hk</a><br>
-        <span title="email">Lian:</span><a href="mailto:14040502d@connect.polyu.hk">14040502d@connect.polyu.hk</a><br>
-        <span title="email">Ivan:</span><a href="mailto:13068412d@connect.polyu.hk">13068412d@connect.polyu.hk</a>
-    </address>
-</footer>
+<? include_once "footer.php";?>
 <script src="jquery-3.1.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="Bootstrap/js/bootstrap.min.js"></script>

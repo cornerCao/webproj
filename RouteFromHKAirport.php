@@ -127,34 +127,9 @@
     </style>
   </head>
   <body>
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">COMP3421</a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li><a href="conference.php">Home</a></li>
-      <li><a href="search.php">Search</a></li>
-          <li><a href="./presentation.php">Presentations</a></li>
-          <li><a href="./speakers.php">Speakers</a></li>
-          <li><a href="./attractions.html">Attractions</a></li>
-          <li class="active"><a href="#">Route<span class="sr-only">(current)</span></a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-       
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
+  <?$active="route";
+  include_once "nav.php";
+  ?>
   <div class="mainDiv">
     <h1>From HK Airport to your conference venue:</h1>
     <form id="calculate-route" name="calculate-route" action="#" method="get">
@@ -169,21 +144,6 @@
     <div id="panel"></div>
     <p id="error"></p>
   </div>
-
-  <footer>
-    <address>
-      COMP PolyU HongKong<br/>
-      <abbr title="Phone">P:</abbr>+852xxxxxxxx
-    </address>
-    <address>
-      <strong>COMP3421</strong><br/>
-      <strong>Members:</strong><br/>
-      <span title="email">Anna:</span><a href="mailto:anna.huang@connect.polyu.hk">anna.huang@connect.polyu.hk</a><br/>
-      <span title="email">Laura:</span><a href="mailto:anna.huang@connect.polyu.hk">anna.huang@connect.polyu.hk</a><br>
-      <span title="email">Lian:</span><a href="mailto:14040502d@connect.polyu.hk">14040502d@connect.polyu.hk</a><br>
-      <span title="email">Ivan:</span><a href="mailto:13068412d@connect.polyu.hk">13068412d@connect.polyu.hk</a>
-    </address>
-  </footer>
   <script>
       <?php
       if(isset($_GET['venue'])){?>

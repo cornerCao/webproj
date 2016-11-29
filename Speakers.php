@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<?php include_once("nav.html")?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +7,7 @@
     <link href="css/speakers.css" rel="stylesheet">
 	<style>
 	.speaker-list{
-		font: 20px,"Arial";
+		font: 20px "Arial";
 color: #888;
 	}
 	#speakertb{
@@ -25,6 +24,9 @@ color: #888;
 	</style>
 </head>
 <body>
+<?$active="speakers";
+include_once "nav.php";
+?>
 <div class="speaker-list">
 <br>
 <h1>Speaker List</h1>

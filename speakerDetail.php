@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php include_once("nav.html");
+<?php include_once("nav.php");
 require_once("connect.php");
 $uri=$_SERVER["REQUEST_URI"];
 $idloc=strpos($uri,"id=")+3;
@@ -14,7 +14,6 @@ $info=mysql_fetch_array($res);
     <title>Speakers</title>
     <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/speakers.css" rel="stylesheet">
-	<style>
 	<style type="text/css">
     .alert h4{
         font-weight: 100;
@@ -22,8 +21,7 @@ $info=mysql_fetch_array($res);
 	.tb{
 		width:100%;
 		align:left;
-		font-size:18px;
-		font-size:Arial light;
+		font:18px Arial light;
 		text-align:left;
 	}
 	.tb td{
@@ -35,7 +33,7 @@ margin-left:auto;
 margin-right:auto;
 max-width: 1000px;
 background: #fff;
-font: 20px,"Arial";
+font: 20px "Arial";
 color: #888;
 text-shadow: 1px 1px 1px #FFF;
 border:0px solid #E4E4E4;
@@ -61,10 +59,12 @@ cursor: pointer;
 .basic-grey .button:hover {
 background: #008080
 }
-</style>
 	</style>
 </head>
 <body>
+<?$active="speakers";
+include_once "nav.php";
+?>
 <div class="speaker-list"style="margin-left:25%;color:#888">
 <br>
 <h1>Speaker Infomation</h1>
