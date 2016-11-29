@@ -14,6 +14,7 @@ $info=mysql_fetch_array($res);
     <title>Speakers</title>
     <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/speakers.css" rel="stylesheet">
+	<style>
 	<style type="text/css">
     .alert h4{
         font-weight: 100;
@@ -61,9 +62,9 @@ cursor: pointer;
 background: #008080
 }
 </style>
+	</style>
 </head>
 <body>
-
 <div class="speaker-list"style="margin-left:25%;color:#888">
 <br>
 <h1>Speaker Infomation</h1>
@@ -73,7 +74,7 @@ background: #008080
 	<tr><td>Full Name: <?php echo $info[0]." ".$info[1];?></td><td rowspan="4" style="text-align:right"><img style="width:250px;height:300px" src="img/<?php echo $info[2];?>"/></td></tr>
 	<tr><td>Affiliation: <?php echo $info[3];?></td></tr>
 	<tr><td>Type: <?php if($info[4]=="n")echo "not PolyU";else echo "PolyU";?></td></tr>
-	<tr><td>Presentation Title: <a href=""><?php $sql="select title from presentation where abstractID='$info[5]';";
+	<tr><td>Presentation Title: <a href="preDetail.php?id=<?php echo $info[5];?>"><?php $sql="select title from presentation where abstractID='$info[5]';";
 								$res=mysql_query($sql) or die(mysql_error());
 								$title=mysql_fetch_array($res);echo $title[0];?></a></td></tr>
 	</table>
