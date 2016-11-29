@@ -5,7 +5,7 @@
 		$input=strtolower($_POST['input']);
 		echo "<tr><th>Title</th><th>Date</th><th>Time</th></tr>";
 		if($select=="Events"){
-			$sql="select eventID,title,date,beginTime,endTime from events where LOWER(title) like '%$input%' or LOWER(venue) like '%$input%'";
+			$sql="select eventID,title,date,beginTime,endTime from events where LOWER(title) like '%$input%' or LOWER(venue) like '%$input%' order by date,beginTime ASC;";
 			$res1=mysql_query($sql) or die(mysql_error());
 			while($eventinfo=mysql_fetch_array($res1)){
 				echo "<tr><td><a href='eventDetail.php?id=$eventinfo[0]'>$eventinfo[1]</a></td>";
