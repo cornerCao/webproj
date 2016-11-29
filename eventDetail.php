@@ -92,7 +92,7 @@ include_once "nav.php";
 	<br>
 	<table class="content">
 	<?php 
-	$sql="select distinct abstractID,title,date,beginTime,endTime from presentation where eventID='$id';";
+	$sql="select distinct abstractID,title,date,beginTime,endTime from presentation where eventID='$id' order by date,beginTime ASC;";
 			$res=mysql_query($sql) or die(mysql_error());
 			$flag=0;
 			while($info=mysql_fetch_array($res)){
