@@ -29,7 +29,7 @@
           <li><a href="./presentation.php">Presentations</a></li>
           <li><a href="./speakers.php">Speakers</a></li>
           <li><a href="./attractions.html">Attractions</a></li>
-        <li><a href="./RouteFromHKAirport.html">Route</a></li>
+        <li><a href="RouteFromHKAirport.php">Route</a></li>
         <li><a href="#">About</a></li>
       </ul>
       <form class="navbar-form navbar-right">
@@ -67,7 +67,7 @@ $result=mysql_query($sql) or die(mysql_error());
         <? while ($event = mysql_fetch_assoc($result)) {?>
         <li >
             <div class="event-info">
-                <a class="info-right">
+                <a href="RouteFromHKAirport.php?venue=<?$pos = substr($event['venue'],strpos($event['venue'], ',')+2); echo $pos;?>" class="info-right">
                     <span class="glyphicon glyphicon-map-marker"></span></br>
                     <span><?echo $event['venue']?></span>
                 </a>

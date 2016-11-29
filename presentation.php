@@ -29,7 +29,7 @@
                 <li class="active"><a href="#">Presentations <span class="sr-only">(current)</span></a></li>
                 <li><a href="./speakers.php">Speakers</a></li>
                 <li><a href="./attractions.html">Attractions</a></li>
-                <li><a href="./RouteFromHKAirport.html">Route</a></li>
+                <li><a href="RouteFromHKAirport.php">Route</a></li>
                 <li><a href="#">About</a></li>
             </ul>
             <form class="navbar-form navbar-right">
@@ -58,6 +58,7 @@ if($eventId){
 $result=mysql_query($sql) or die(mysql_error());
 ?>
 <div class="preTable">
+    <h1>Sessions</h1>
     <div class="preCell">
         <!--<div class="eventTable table-responsive">-->
         <table class="table table-responsive" style="margin-bottom: 0px">
@@ -79,7 +80,7 @@ $result=mysql_query($sql) or die(mysql_error());
                 <td><?echo $pre['abstractID']?></td>
                 <td><?echo $pre['type']?></td>
                 <td><?echo $pre['title']?></td>
-                <td><a href="speakerDetail.php?speakerId=<?echo $pre['speakerID'];?>"><?echo $pre['firstname'].' '.$pre['lastname']?></a></td>
+                <td><a href="speakerDetail.php?id=<?echo $pre['speakerID'];?>"><?echo $pre['firstname'].' '.$pre['lastname']?></a></td>
                 <td><?echo $pre['date']?></td>
                 <td><?echo $pre['beginTime']?></td>
                 <td><?echo $pre['endTime']?></td>

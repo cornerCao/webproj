@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -187,5 +188,15 @@
       <span title="email">Ivan:</span><a href="mailto:13068412d@connect.polyu.hk">13068412d@connect.polyu.hk</a>
     </address>
   </footer>
+  <script>
+      <?php
+      if(isset($_GET['venue'])){?>
+      $("#to").val('<?echo $_GET['venue'];?>');
+      <?}
+      ?>
+
+  </script>
   </body>
+
+
 </html>

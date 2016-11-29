@@ -14,7 +14,6 @@ $info=mysql_fetch_array($res);
     <title>Speakers</title>
     <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/speakers.css" rel="stylesheet">
-	<style>
 	<style type="text/css">
     .alert h4{
         font-weight: 100;
@@ -62,9 +61,9 @@ cursor: pointer;
 background: #008080
 }
 </style>
-	</style>
 </head>
 <body>
+
 <div class="speaker-list"style="margin-left:25%;color:#888">
 <br>
 <h1>Speaker Infomation</h1>

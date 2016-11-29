@@ -1,7 +1,12 @@
 .preTable{
     margin: 100px auto;
     width:90%;
+
 }
+.preTable h1{
+    color: #888;
+}
+
 .preCell{
     margin-top: 20px;
     border: 1px solid #D9D9D9;
