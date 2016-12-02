@@ -30,18 +30,18 @@ $connect=mysql_connect("mysql.comp.polyu.edu.hk","16027789x","jsiyppoo") or die(
 //连接数据库(test)
 mysql_select_db("16027789x",$connect) or die (mysql_error());
 $sql = "select distinct date from events order by date ASC";
-$dates = mysql_query($sql) or die(mysql_error());
+$temp = mysql_query($sql) or die(mysql_error());
 if(isset($_GET['date'])){
-    $sql="select * from events where date=".$_GET['$date'].";";
+    $sql="select * from events where date='".$_GET['date']."'order by beginTime ASC;";
 }else{
-    $sql="select * from events order by date ASC;";
+    $sql="select * from events order by date,beginTime ASC ;";
 }
 $result=mysql_query($sql) or die(mysql_error());
 ?>
-<ul id="date" class="nav nav-tabs" role="tablist">
-    <li role="presentation"><a href="conference.php">All</a></li>
-    <?while($date = mysql_fetch_assoc($dates)){?>
-    <li role="presentation"><a href="conference.php?date=<?echo $date;?>">$date</a></li>
+<ul id="date" class="nav nav-pills" role="tablist">
+    <li <?if(!isset($_GET['date'])){?>class="active"<?}?> role="presentation"><a href="conference.php">All</a></li>
+    <? while ($date = mysql_fetch_assoc($temp)){?>
+    <li role="presentation" <?if(isset($_GET['date'])&&$_GET['date']==$date['date']){?>class="active"<?}?>"><a href="conference.php?date=<?echo $date['date'];?>"><?echo $date['date'];?></a></li>
     <?}?>
 </ul>
 <div class="event-list">
