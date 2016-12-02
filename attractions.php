@@ -108,7 +108,7 @@
     <div class="Intro" id="introduction">
     </div>
     <? 
-//    $connect->close();
+//    $connect->close(); 
     mysql_close($connect);
     ?>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>

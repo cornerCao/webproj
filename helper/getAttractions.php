@@ -55,5 +55,5 @@
             echo "<p>$tempArray[18]</p><br><br>";
         }
     }
-    $connect->close();
+mysql_close($connect);
 ?>
