@@ -25,7 +25,7 @@
 }
 .event-list{
     background-color: white;
-    margin: 100px auto;
+    margin: 10px auto;
     max-width: 700px;
 }
 .event-items{
@@ -89,6 +89,12 @@
 .blue-link:hover{
     color: rgb(7, 91, 141);
     font-weight: 500;
+
+}
+
+#date{
+    margin: 100px auto;
+    max-width: 700px;
 
 }
 

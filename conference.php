@@ -29,9 +29,21 @@
 $connect=mysql_connect("mysql.comp.polyu.edu.hk","16027789x","jsiyppoo") or die("链接数据库失败！");
 //连接数据库(test)
 mysql_select_db("16027789x",$connect) or die (mysql_error());
-$sql="select * from events order by date ASC;";
+$sql = "select distinct date from events order by date ASC";
+$dates = mysql_query($sql) or die(mysql_error());
+if(isset($_GET['date'])){
+    $sql="select * from events where date=".$_GET['$date'].";";
+}else{
+    $sql="select * from events order by date ASC;";
+}
 $result=mysql_query($sql) or die(mysql_error());
 ?>
+<ul id="date" class="nav nav-tabs" role="tablist">
+    <li role="presentation"><a href="conference.php">All</a></li>
+    <?while($date = mysql_fetch_assoc($dates)){?>
+    <li role="presentation"><a href="conference.php?date=<?echo $date;?>">$date</a></li>
+    <?}?>
+</ul>
 <div class="event-list">
     <ul class="event-items">
         <? while ($event = mysql_fetch_assoc($result)) {?>
@@ -70,7 +82,9 @@ $result=mysql_query($sql) or die(mysql_error());
 
             </div>
         </li>
-        <?}?>
+        <?}
+        mysql_close($connect);
+        ?>
 
     </ul>
 </div>

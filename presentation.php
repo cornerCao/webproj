@@ -37,12 +37,12 @@ $result=mysql_query($sql) or die(mysql_error());
             <tr>
                 <th>AbstractId</th>
                 <th>Type</th>
-                <th>Title</th>
+                <th>Title</th> 
                 <th>Speaker</th>
                 <th>Date</th>
                 <th>Begining_time</th>
                 <th>Ending_time</th>
-                <th>Biography</th>
+                <th>Content</th>
             </tr>
             </thead>
             <tbody>
@@ -59,6 +59,7 @@ $result=mysql_query($sql) or die(mysql_error());
             </tr>
                 <?
             }
+            mysql_close($connect);
             ?>
             </tbody>
         </table>
