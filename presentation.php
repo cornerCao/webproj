@@ -35,27 +35,27 @@ $result=mysql_query($sql) or die(mysql_error());
         <table class="table table-responsive" style="margin-bottom: 0px">
             <thead>
             <tr>
-                <th>AbstractId</th>
-                <th>Type</th>
+<!--                <th>AbstractId</th>-->
+<!--                <th>Type</th>-->
                 <th>Title</th> 
                 <th>Speaker</th>
                 <th>Date</th>
                 <th>Begining_time</th>
                 <th>Ending_time</th>
-                <th>Content</th>
+                <th>Abstract</th>
             </tr>
             </thead>
             <tbody>
             <? while ($pre = mysql_fetch_assoc($result)) {?>
             <tr>
-                <td><?echo $pre['abstractID']?></td>
-                <td><?echo $pre['type']?></td>
+<!--                <td>--><?//echo $pre['abstractID']?><!--</td>-->
+<!--                <td>--><?//echo $pre['type']?><!--</td>-->
                 <td><?echo $pre['title']?></td>
                 <td><a href="speakerDetail.php?id=<?echo $pre['speakerID'];?>"><?echo $pre['firstname'].' '.$pre['lastname']?></a></td>
                 <td><?echo $pre['date']?></td>
                 <td><?echo $pre['beginTime']?></td>
                 <td><?echo $pre['endTime']?></td>
-                <td><?echo $pre['biography']?></td>
+                <td style="text-align:left;"><?echo $pre['abstract']?></td>
             </tr>
                 <?
             }
