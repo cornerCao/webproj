@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b690fe7-0ba5-4cfa-894b-e7adefe90562" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helper/getAttractions.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/getEventInfo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webData.CSV" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webData2.csv" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/connect.php" afterPath="$PROJECT_DIR$/helper/connect.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/footer.php" afterPath="$PROJECT_DIR$/helper/footer.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/getResult.php" afterPath="$PROJECT_DIR$/helper/getResult.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/nav.php" afterPath="$PROJECT_DIR$/helper/nav.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteFromHKAirport.php" afterPath="$PROJECT_DIR$/RouteFromHKAirport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/attractions.php" afterPath="$PROJECT_DIR$/attractions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conference.php" afterPath="$PROJECT_DIR$/conference.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eventDetail.php" afterPath="$PROJECT_DIR$/eventDetail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preDetail.php" afterPath="$PROJECT_DIR$/preDetail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/presentation.php" afterPath="$PROJECT_DIR$/presentation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search.php" afterPath="$PROJECT_DIR$/search.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/speakerDetail.php" afterPath="$PROJECT_DIR$/speakerDetail.php" />
     </list>
     <ignored path="webproj.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,17 +24,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="conference.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="conference.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/conference.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1485">
-              <caret line="6" column="50" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="88" column="24" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
               <folding>
-                <marker date="1480685586000" expanded="true" signature="1259:1309" placeholder="select disti... " />
-                <marker date="1480685586000" expanded="true" signature="1288:1309" placeholder="select disti... " />
-                <marker date="1480685586000" expanded="true" signature="1397:1418" placeholder="select * fro... events" />
-                <marker date="1480685586000" expanded="true" signature="1397:1470" placeholder="select * fro... events" />
-                <marker date="1480685586000" expanded="true" signature="1491:1539" placeholder="select * fro... events" />
+                <marker date="1480686798000" expanded="true" signature="1259:1309" placeholder="select disti... " />
+                <marker date="1480686798000" expanded="true" signature="1288:1309" placeholder="select disti... " />
+                <marker date="1480686798000" expanded="true" signature="1397:1418" placeholder="select * fro... events" />
+                <marker date="1480686798000" expanded="true" signature="1397:1470" placeholder="select * fro... events" />
+                <marker date="1480686798000" expanded="true" signature="1491:1539" placeholder="select * fro... events" />
               </folding>
             </state>
           </provider>
@@ -98,10 +82,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="preDetail.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="preDetail.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/preDetail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="-1215">
               <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
               <folding>
                 <marker date="1480685719000" expanded="true" signature="126:221" placeholder="select title... " />
@@ -207,7 +191,6 @@
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/css/event.css" />
         <option value="$PROJECT_DIR$/attractions/attractions.php" />
-        <option value="$PROJECT_DIR$/conference.php" />
         <option value="$PROJECT_DIR$/eventDetail.php" />
         <option value="$PROJECT_DIR$/preDetail.php" />
         <option value="$PROJECT_DIR$/presentation.php" />
@@ -217,6 +200,7 @@
         <option value="$PROJECT_DIR$/speakers.php" />
         <option value="$PROJECT_DIR$/RouteFromHKAirport.php" />
         <option value="$PROJECT_DIR$/attractions.php" />
+        <option value="$PROJECT_DIR$/conference.php" />
       </list>
     </option>
   </component>
@@ -361,18 +345,18 @@
       <workItem from="1480591601806" duration="98000" />
       <workItem from="1480593254290" duration="179000" />
       <workItem from="1480673936986" duration="260000" />
-      <workItem from="1480681315406" duration="4958000" />
+      <workItem from="1480681315406" duration="5049000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64631000" />
+    <option name="totallyTimeSpent" value="64722000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="8" y="25" width="1280" height="721" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23006135" sideWeight="0.54375" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -415,11 +399,11 @@
         <state relative-caret-position="1815">
           <caret line="121" column="34" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
           <folding>
-            <marker date="1480685586000" expanded="true" signature="1259:1309" placeholder="select disti... " />
-            <marker date="1480685586000" expanded="true" signature="1288:1309" placeholder="select disti... " />
-            <marker date="1480685586000" expanded="true" signature="1397:1418" placeholder="select * fro... events" />
-            <marker date="1480685586000" expanded="true" signature="1397:1470" placeholder="select * fro... events" />
-            <marker date="1480685586000" expanded="true" signature="1491:1539" placeholder="select * fro... events" />
+            <marker date="1480686798000" expanded="true" signature="1259:1309" placeholder="select disti... " />
+            <marker date="1480686798000" expanded="true" signature="1288:1309" placeholder="select disti... " />
+            <marker date="1480686798000" expanded="true" signature="1397:1418" placeholder="select * fro... events" />
+            <marker date="1480686798000" expanded="true" signature="1397:1470" placeholder="select * fro... events" />
+            <marker date="1480686798000" expanded="true" signature="1491:1539" placeholder="select * fro... events" />
           </folding>
         </state>
       </provider>
@@ -498,11 +482,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1480685586000" expanded="true" signature="1259:1309" placeholder="select disti... " />
-            <marker date="1480685586000" expanded="true" signature="1288:1309" placeholder="select disti... " />
-            <marker date="1480685586000" expanded="true" signature="1397:1418" placeholder="select * fro... events" />
-            <marker date="1480685586000" expanded="true" signature="1397:1470" placeholder="select * fro... events" />
-            <marker date="1480685586000" expanded="true" signature="1491:1539" placeholder="select * fro... events" />
+            <marker date="1480686798000" expanded="true" signature="1259:1309" placeholder="select disti... " />
+            <marker date="1480686798000" expanded="true" signature="1288:1309" placeholder="select disti... " />
+            <marker date="1480686798000" expanded="true" signature="1397:1418" placeholder="select * fro... events" />
+            <marker date="1480686798000" expanded="true" signature="1397:1470" placeholder="select * fro... events" />
+            <marker date="1480686798000" expanded="true" signature="1491:1539" placeholder="select * fro... events" />
           </folding>
         </state>
       </provider>
@@ -787,20 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conference.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1485">
-          <caret line="6" column="50" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <marker date="1480685586000" expanded="true" signature="1259:1309" placeholder="select disti... " />
-            <marker date="1480685586000" expanded="true" signature="1288:1309" placeholder="select disti... " />
-            <marker date="1480685586000" expanded="true" signature="1397:1418" placeholder="select * fro... events" />
-            <marker date="1480685586000" expanded="true" signature="1397:1470" placeholder="select * fro... events" />
-            <marker date="1480685586000" expanded="true" signature="1491:1539" placeholder="select * fro... events" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/attractions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -836,12 +806,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/preDetail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="-1215">
           <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
           <folding>
             <marker date="1480685719000" expanded="true" signature="126:221" placeholder="select title... " />
             <marker date="1480685719000" expanded="true" signature="307:380" placeholder="select first... authorsabstracts" />
             <marker date="1480685719000" expanded="true" signature="2430:2500" placeholder="select first... authorsabstracts" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conference.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="88" column="24" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
+          <folding>
+            <marker date="1480686798000" expanded="true" signature="1259:1309" placeholder="select disti... " />
+            <marker date="1480686798000" expanded="true" signature="1288:1309" placeholder="select disti... " />
+            <marker date="1480686798000" expanded="true" signature="1397:1418" placeholder="select * fro... events" />
+            <marker date="1480686798000" expanded="true" signature="1397:1470" placeholder="select * fro... events" />
+            <marker date="1480686798000" expanded="true" signature="1491:1539" placeholder="select * fro... events" />
           </folding>
         </state>
       </provider>

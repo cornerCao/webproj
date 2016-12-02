@@ -86,7 +86,7 @@ $result=mysql_query($sql) or die(mysql_error());
 
     </ul>
 </div>
-<? include_once "footer.php";?>
+<? include_once "helper/footer.php";?>
 <script src="jquery-3.1.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="Bootstrap/js/bootstrap.min.js"></script>
