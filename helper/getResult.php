@@ -30,8 +30,10 @@
 			while($info=mysql_fetch_array($res)){
 				echo "<tr><td style='width:55%'><a href='preDetail.php?id=$info[0]'>$info[1]</a></td>";
 				echo "<td style='width:20%'>$info[2]</td><td style='width:25%'>$info[3] - $info[4]</td></tr>";
-				echo "<tr><td colspan='3'><img style='margin-left:-10px' src='img/line.png'/></td></tr>"; 
+				echo "<tr><td colspan='3'><img style='margin-left:-10px' src='img/line.png'/></td></tr>";
 			}
 		}
 	}
+mysql_close($connect);
+
 ?>

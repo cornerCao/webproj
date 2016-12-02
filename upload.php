@@ -1,4 +1,5 @@
 <?php
+//upload
 $target_dir = "uploads/";
 $message = "";
 $target_files = $_FILES["fileToUpload"]["name"];

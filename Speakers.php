@@ -40,6 +40,8 @@ include_once "helper/nav.php";
 			echo "<tr><td><a href='speakerDetail.php?id=$info[0]'>$info[1]  $info[2]</a><br></td></tr>";
 			echo "<tr><td colspan='2'><img src='img/line.png'/><br></td></tr>";
 		}
+	mysql_close($connect);
+
 	?>	
 	</table>
 </div>

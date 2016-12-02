@@ -38,7 +38,7 @@ $info=mysql_fetch_array($res);
 			text-shadow: 1px 1px 1px #FFF;
 			border:0px solid #E4E4E4;
 		}
-	
+
 	</style>
 </head>
 <body>
@@ -56,7 +56,8 @@ include_once "helper/nav.php";
 			<tr><td>Type: <?php if($info[4]=="n")echo "not PolyU";else echo "PolyU";?></td></tr>
 			<tr><td>Presentation Title: <a href="preDetail.php?id=<?php echo $info[5];?>"><?php $sql="select title from presentation where abstractID='$info[5]';";
 						$res=mysql_query($sql) or die(mysql_error());
-						$title=mysql_fetch_array($res);echo $title[0];?></a></td></tr>
+						$title=mysql_fetch_array($res);	mysql_close($connect);
+						echo $title[0];?></a></td></tr>
 		</table>
 	</div>
 </div>

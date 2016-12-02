@@ -27,7 +27,7 @@ include_once "helper/nav.php";
 <a id="gotoTop" onclick="gotoTop()"><span class="glyphicon glyphicon-chevron-up"></span></a>
 <?
 include_once "helper/connect.php";
-$sql = "select distinct date from events order by date ASC";
+$sql = "select distinct date from events order by date ASC;";
 $temp = mysql_query($sql) or die(mysql_error());
 if(isset($_GET['date'])){
     $sql="select * from events where date='".$_GET['date']."'order by beginTime ASC;";
@@ -87,6 +87,7 @@ $result=mysql_query($sql) or die(mysql_error());
   $(window).scroll(function(){
       var min_height = 300;
       var s = $(window).scrollTop();
+      //The gotoTop fidein when users scroll to a certain position
       if( s > min_height){
           $("#gotoTop").fadeIn(200);
       }else{
@@ -109,7 +110,7 @@ $result=mysql_query($sql) or die(mysql_error());
             }
             $('input.submitInput').attr("disabled",false);
             $('input.submitInput').addClass("chooseDiv");
-        })
+        });
     function gotoTop() {
         $('html,body').animate({scrollTop:0},400);
     }

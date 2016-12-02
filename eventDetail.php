@@ -70,8 +70,11 @@ include_once "helper/nav.php";
 				echo "<tr><td colspan='3'><img style='margin-left:-10px;width:100%' src='img/line.png'/></td></tr>";
 			}
 			if($flag==0)echo "<tr style='font-size:20px'><td style='padding-left:60px;padding-top:0px'>No content</td></tr>";
+			mysql_close($connect);
+
 	?>
 	</table>
+
 </div>
 </div>
 
