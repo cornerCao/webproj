@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b690fe7-0ba5-4cfa-894b-e7adefe90562" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helper/nav.php" afterPath="$PROJECT_DIR$/helper/nav.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preDetail.php" afterPath="$PROJECT_DIR$/preDetail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/speakerDetail.php" afterPath="$PROJECT_DIR$/speakerDetail.php" />
     </list>
     <ignored path="webproj.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,16 +51,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="speakers.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/speakers.php">
+      <file leaf-file-name="speakerDetail.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/speakerDetail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+            <state relative-caret-position="30">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
               <folding>
-                <marker date="1480685840000" expanded="true" signature="633:752" placeholder="select autho... authorsabstracts" />
-                <marker date="1480685840000" expanded="true" signature="863:874" placeholder="..." />
-                <marker date="1480685840000" expanded="true" signature="890:906" placeholder="..." />
-                <marker date="1480685840000" expanded="true" signature="995:1035" placeholder="..." />
+                <marker date="1480686957000" expanded="true" signature="149:265" placeholder="select first... authorsabstracts" />
+                <marker date="1480686957000" expanded="true" signature="1990:2184" placeholder="..." />
+                <marker date="1480686957000" expanded="true" signature="2004:2062" placeholder="select title... presentation" />
               </folding>
             </state>
           </provider>
@@ -82,15 +82,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="preDetail.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="preDetail.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/preDetail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1215">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+            <state relative-caret-position="15">
+              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
               <folding>
-                <marker date="1480685719000" expanded="true" signature="126:221" placeholder="select title... " />
-                <marker date="1480685719000" expanded="true" signature="307:380" placeholder="select first... authorsabstracts" />
-                <marker date="1480685719000" expanded="true" signature="2430:2500" placeholder="select first... authorsabstracts" />
+                <marker date="1480686971000" expanded="true" signature="133:228" placeholder="select title... " />
+                <marker date="1480686971000" expanded="true" signature="314:387" placeholder="select first... authorsabstracts" />
+                <marker date="1480686971000" expanded="true" signature="2437:2507" placeholder="select first... authorsabstracts" />
               </folding>
             </state>
           </provider>
@@ -146,7 +146,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nav.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nav.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helper/nav.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
@@ -192,15 +192,15 @@
         <option value="$PROJECT_DIR$/css/event.css" />
         <option value="$PROJECT_DIR$/attractions/attractions.php" />
         <option value="$PROJECT_DIR$/eventDetail.php" />
-        <option value="$PROJECT_DIR$/preDetail.php" />
         <option value="$PROJECT_DIR$/presentation.php" />
         <option value="$PROJECT_DIR$/search.php" />
-        <option value="$PROJECT_DIR$/speakerDetail.php" />
         <option value="$PROJECT_DIR$/speakers.php" />
         <option value="$PROJECT_DIR$/RouteFromHKAirport.php" />
         <option value="$PROJECT_DIR$/attractions.php" />
         <option value="$PROJECT_DIR$/conference.php" />
         <option value="$PROJECT_DIR$/helper/nav.php" />
+        <option value="$PROJECT_DIR$/speakerDetail.php" />
+        <option value="$PROJECT_DIR$/preDetail.php" />
       </list>
     </option>
   </component>
@@ -359,12 +359,12 @@
       <workItem from="1480591601806" duration="98000" />
       <workItem from="1480593254290" duration="179000" />
       <workItem from="1480673936986" duration="260000" />
-      <workItem from="1480681315406" duration="5128000" />
+      <workItem from="1480681315406" duration="5221000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64801000" />
+    <option name="totallyTimeSpent" value="64894000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="8" y="25" width="1280" height="721" extended-state="6" />
@@ -712,18 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/speakerDetail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding>
-            <marker date="1480685719000" expanded="true" signature="142:258" placeholder="select first... authorsabstracts" />
-            <marker date="1480685719000" expanded="true" signature="1983:2177" placeholder="..." />
-            <marker date="1480685719000" expanded="true" signature="1997:2055" placeholder="select title... presentation" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/survey.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -810,18 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/preDetail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1215">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-          <folding>
-            <marker date="1480685719000" expanded="true" signature="126:221" placeholder="select title... " />
-            <marker date="1480685719000" expanded="true" signature="307:380" placeholder="select first... authorsabstracts" />
-            <marker date="1480685719000" expanded="true" signature="2430:2500" placeholder="select first... authorsabstracts" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conference.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-165">
@@ -841,6 +817,30 @@
         <state relative-caret-position="285">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speakerDetail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding>
+            <marker date="1480686957000" expanded="true" signature="149:265" placeholder="select first... authorsabstracts" />
+            <marker date="1480686957000" expanded="true" signature="1990:2184" placeholder="..." />
+            <marker date="1480686957000" expanded="true" signature="2004:2062" placeholder="select title... presentation" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preDetail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+          <folding>
+            <marker date="1480686971000" expanded="true" signature="133:228" placeholder="select title... " />
+            <marker date="1480686971000" expanded="true" signature="314:387" placeholder="select first... authorsabstracts" />
+            <marker date="1480686971000" expanded="true" signature="2437:2507" placeholder="select first... authorsabstracts" />
+          </folding>
         </state>
       </provider>
     </entry>

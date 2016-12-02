@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php 
-require_once("connect.php");
+require_once("helper/connect.php");
 $uri=$_SERVER["REQUEST_URI"];
 $idloc=strpos($uri,"id=")+3;
 $id=substr($uri,$idloc);
