@@ -7,8 +7,8 @@
     <link href="css/speakers.css" rel="stylesheet">
 	<style>
 	.speaker-list{
-		font: 20px,"Arial";
-color: #888;
+		font: 20px "Arial";
+		color: #888;
 	}
 	#speakertb{
 		width:100%;
@@ -40,7 +40,7 @@ color: #888;
 </head>
 <body>
 <?$active="search";
-include_once "nav.php";
+include_once "helper/nav.php";
 ?>
 <div class="speaker-list">
 <br>
@@ -68,7 +68,7 @@ include_once "nav.php";
 <script>
 function getResult(){
 	var postdata={'select':$("#select").find("option:selected").text(),'input':$("#keyword").val()};
-	$.post("getResult.php",postdata,function(data,status){
+	$.post("helper/getResult.php",postdata,function(data,status){
 		$("#display").html(data);
 	});
 }

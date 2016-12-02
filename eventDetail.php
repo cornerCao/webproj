@@ -77,7 +77,7 @@ background: #008080
 </head>
 <body>
 <?$active="search";
-include_once "nav.php";
+include_once "helper/nav.php";
 ?>
 <div class="speaker-list"style="margin-left:25%;color:#888">
 <br>

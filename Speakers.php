@@ -25,14 +25,14 @@ color: #888;
 </head>
 <body>
 <?$active="speakers";
-include_once "nav.php";
+include_once "helper/nav.php";
 ?>
 <div class="speaker-list">
 <br>
 <h1>Speaker List</h1>
     <table id="speakertb">
 	<?php
-		require_once("connect.php");
+		require_once("helper/connect.php");
 		$sql="select authorID,firstname,lastname,speakerPhoto,speakerAffiliation from authorsabstracts where speakerPhoto is not null";
 		$res=mysql_query($sql) or die(mysql_error());
 		while($info=mysql_fetch_array($res)){

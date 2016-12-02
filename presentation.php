@@ -10,15 +10,14 @@
 </head>
 <body>
 <?$active="presentation";
-include_once "nav.php";
+include_once "helper/nav.php";
 ?>
 <div class="back">
     <a href="./conference.php"><span class="glyphicon glyphicon-chevron-left"></span></a>
 </div>
 
 <?php
-$eventId =isset($_GET['eventId'])? $_GET['eventId']:null;
-$connect=mysql_connect("mysql.comp.polyu.edu.hk","16027789x","jsiyppoo") or die("链接数据库失败！");
+include_once 'helper/connect.php';
 //连接数据库(test)
 mysql_select_db("16027789x",$connect) or die (mysql_error());
 if($eventId){

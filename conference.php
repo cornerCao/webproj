@@ -10,7 +10,7 @@
 </head>
 <body>
 <?$active="conference";
-    include_once "nav.php";
+include_once "helper/nav.php";
 ?>
 <div class="uploadCSVDiv">
 	<form action="upload.php" method="post" enctype="multipart/form-data">
@@ -26,9 +26,7 @@
 </div>
 <a id="gotoTop" onclick="gotoTop()" style="display:none;position: fixed;bottom: 15%;right: 3%;width: 50px;height: 50px;text-align: center;padding-top: 15px;color:white;background-color: #337ab7;border-radius: 5px "><span class="glyphicon glyphicon-chevron-up"></span></a>
 <?
-$connect=mysql_connect("mysql.comp.polyu.edu.hk","16027789x","jsiyppoo") or die("链接数据库失败！");
-//连接数据库(test)
-mysql_select_db("16027789x",$connect) or die (mysql_error());
+include_once "helper/connect.php";
 $sql = "select distinct date from events order by date ASC";
 $temp = mysql_query($sql) or die(mysql_error());
 if(isset($_GET['date'])){
