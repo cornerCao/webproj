@@ -18,8 +18,7 @@ include_once "helper/nav.php";
 
 <?php
 include_once 'helper/connect.php';
-//连接数据库(test)
-mysql_select_db("16027789x",$connect) or die (mysql_error());
+$eventId = isset($_GET['eventId'])?$_GET['eventId']:null;
 if($eventId){
     $sql="select * from presentation,authorsabstracts where presentation.eventID = $eventId and presentation.speakerID = authorsabstracts.authorID;";
 }else{

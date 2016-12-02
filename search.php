@@ -4,22 +4,12 @@
     <meta charset="UTF-8">
     <title>Search</title>
     <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/speakers.css" rel="stylesheet">
 	<style>
-	.speaker-list{
+	.searchResult{
 		font: 20px "Arial";
 		color: #888;
-	}
-	#speakertb{
-		width:100%;
-		padding-top:auto;
-		padding-left:auto;
-		margin-top:auto;
-	}
-	#speakertb td{
-	}
-	#photo{
-		text-align:right;
+		margin: 70px auto;
+		max-width: 500px;
 	}
 	.searchtable{
 		width:100%;
@@ -42,7 +32,7 @@
 <?$active="search";
 include_once "helper/nav.php";
 ?>
-<div class="speaker-list">
+<div class="searchResult">
 <br>
 <h1>General Search</h1>
     <div class="form-group">

@@ -19,6 +19,7 @@
 
         #about > p{
             text-indent: 20px;
+            font-size: 15px;
         }
 
     </style>

@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <title>Speakers</title>
     <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/speakers.css" rel="stylesheet">
 	<style>
 	.speaker-list{
+		margin: 70px auto;
+		max-width: 500px;
 		font: 20px "Arial";
-color: #888;
+		color: #888;
 	}
 	#speakertb{
 		width:100%;
 		padding-top:auto;
 		padding-left:auto;
 		margin-top:auto;
-	}
-	#speakertb td{
 	}
 	#photo{
 		text-align:right;

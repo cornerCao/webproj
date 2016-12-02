@@ -24,7 +24,7 @@ include_once "helper/nav.php";
 <div class="feedback">
     <a href="./survey.php"><span class="glyphicon glyphicon-pencil"></span></a>
 </div>
-<a id="gotoTop" onclick="gotoTop()" style="display:none;position: fixed;bottom: 15%;right: 3%;width: 50px;height: 50px;text-align: center;padding-top: 15px;color:white;background-color: #337ab7;border-radius: 5px "><span class="glyphicon glyphicon-chevron-up"></span></a>
+<a id="gotoTop" onclick="gotoTop()"><span class="glyphicon glyphicon-chevron-up"></span></a>
 <?
 include_once "helper/connect.php";
 $sql = "select distinct date from events order by date ASC";
@@ -64,16 +64,6 @@ $result=mysql_query($sql) or die(mysql_error());
                         echo $event['title'];
                     }?>
                 </h4>
-<!--                --><?php
-//                $eventId = $event['eventID'];
-//                $sql ="SELECT count(*) FROM Event where eventID='$eventId'";
-//                $r = mysql_query($sql) or die(mysql_error());
-//                $eventNum = mysql_fetch_array($r,MYSQLI_NUM);
-//                $sql ="SELECT count(*) FROM Presentation JOIN Event where Presentation.eventID=Event.eventID and eventID='$eventId' ";
-//                $r = mysql_query($sql) or die(mysql_error());
-//                $preNum = mysql_fetch_array($r,MYSQLI_NUM);
-//                ?>
-
                 <div class="info-footer">
                     <span title="time" class="glyphicon glyphicon-time"></span><span><?echo substr($event['beginTime'],0,strrpos($event['beginTime'],':'));?></span><span>-</span><span><?echo substr($event['endTime'],0,strrpos($event['endTime'],':'));?></span></span>
                 </div>
