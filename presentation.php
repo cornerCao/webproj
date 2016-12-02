@@ -49,12 +49,12 @@ $result=mysql_query($sql) or die(mysql_error());
             <tr>
 <!--                <td>--><?//echo $pre['abstractID']?><!--</td>-->
 <!--                <td>--><?//echo $pre['type']?><!--</td>-->
-                <td><?echo $pre['title']?></td>
-                <td><a href="speakerDetail.php?id=<?echo $pre['speakerID'];?>"><?echo $pre['firstname'].' '.$pre['lastname']?></a></td>
-                <td><?echo $pre['date']?></td>
-                <td><?echo $pre['beginTime']?></td>
-                <td><?echo $pre['endTime']?></td>
-                <td style="text-align:left;"><?echo $pre['abstract']?></td>
+                <td><?echo $pre['title'];?></td>
+                <td><a href="speakerDetail.php?id=<?echo $pre['speakerID'];?>"><?echo $pre['firstname'].' '.$pre['lastname'];?></a></td>
+                <td><?echo $pre['date'];?></td>
+                <td><?echo substr($pre['beginTime'],0,strrpos($pre['beginTime'],':'));?></td>
+                <td><?echo substr($pre['endTime'],0,strrpos($pre['endTime'],':'));?></td>
+                <td style="text-align:left;"><?echo $pre['abstract'];?></td>
             </tr>
                 <?
             }
