@@ -103,7 +103,7 @@ function import()
             $ID = mysql_fetch_array($res);
             $event = $ID[0];
         }
-        $sql = "insert into presentation(abstractID,type,title,speakerID,beginTime,endTime,date,biography,eventID) values('$info[0]','$info[1]','$info[2]','$info[5]','$info[8]','$info[9]','$info[10]','$info[11]','$event');";
+        $sql = "insert into presentation(abstractID,type,title,speakerID,beginTime,endTime,date,biography,eventID,abstract) values('$info[0]','$info[1]','$info[2]','$info[5]','$info[8]','$info[9]','$info[10]','$info[11]','$event','$info[12]');";
         mysql_query($sql) or die(mysql_error());
         if (mysql_error()) {
             echo "failed!";

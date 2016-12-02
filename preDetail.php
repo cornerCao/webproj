@@ -3,7 +3,7 @@
 $uri=$_SERVER["REQUEST_URI"];
 $idloc=strpos($uri,"id=")+3;
 $id=substr($uri,$idloc);
-$sql="select title,date,beginTime,endTime,speakerID from presentation where abstractID='$id'";
+$sql="select title,date,beginTime,endTime,speakerID,abstract from presentation where abstractID='$id'";
 $res=mysql_query($sql) or die(mysql_error());
 $info=mysql_fetch_array($res);
 $sql="select firstname,lastname from authorsabstracts where authorID='$info[4]'";
@@ -88,6 +88,7 @@ include_once "nav.php";
 <div>
     <table class="tb">
 	<tr><td><i class="glyphicon glyphicon-calendar"/></td><td colspan='2'><?php echo $info[1]."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$info[2]." - ".$info[3];?></td></tr>
+	    <tr><td><i class=""/></td><td colspan='2'><?php echo $info[5];?></td></tr>
 	<tr><td><i class="glyphicon glyphicon-user"/></td><td style="width:20%">Speaker: </td><td style='text-align:left'><a href='speakerDetail.php?id=<?php echo $info[4];?>'><?php echo $speakername;?></a></td></tr>
 	<tr><td></td><td valign="top">Authors: </td><td><?php 
 		$sql="select firstname,lastname from authorsabstracts where abstractID='$id'";
