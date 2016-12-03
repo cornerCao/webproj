@@ -1,6 +1,6 @@
 <footer>
     <address>
-COMP PolyU HongKong<br/>
+<a href="https://www.comp.polyu.edu.hk/" target="_blank">COMP</a> <a href="https://www.polyu.edu.hk/web/en/home/index.html" target="_blank">PolyU</a> HongKong<br/>
         <abbr title="Phone">P:</abbr>+852xxxxxxxx
 </address>
     <address>
