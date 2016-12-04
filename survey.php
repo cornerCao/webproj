@@ -167,9 +167,9 @@
 					<tr><td><input type="text" name="email" id="email"/></td></tr>
 				</table>
 				<br/>
-				<input type="submit" value="Submit" />
-				<input type="reset"  value="Reset"/>
-				<input type="button" value="View Results" onclick="viewresults()"/>
+				<input class="blueButton" type="submit" value="Submit" />
+				<input class="blueButton" type="reset"  value="Reset"/>
+				<input class="blueButton" type="button" value="View Results" onclick="viewresults()"/>
 			</form>
 		</div>
 	</body>

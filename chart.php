@@ -24,7 +24,7 @@
 		?>
 		<?
 			$active="conference";
-			include_once "nav.php";
+			include_once "helper/nav.php";
 		?>
 		<?
 			//$query = SELECT COUNT(ans1) AS Q1 FROM comp3421_surveyanswers WHERE ans1="A";
@@ -153,7 +153,7 @@
 		<div class="container">
 			<br><br>
 			<h3>Results of the survey</h3>
-			<button type="button" onclick="generatecsv()">Generate CSV file</button>
+			<button class="blueButton" type="button" onclick="generatecsv()">Generate CSV file</button>
 			<br><br>
 			<table class="table">
 				<tr><td>1. Have you ever attended our conference before?</td><td><img src = "http://chart.apis.google.com/chart?cht=bvg&chs=450x100&chd=t:<? echo $row1_1[1];?>,<? echo $row1_2[1];?>&chxt=x,y&chxl=0:|A|B&chg=10,20&chm=N*f0*,000000,0,-1,11"/></td></tr>

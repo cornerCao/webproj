@@ -38,6 +38,20 @@ footer address {
     border-radius: 5px
 }
 
+.blueButton{
+    margin-top: 10px;
+    padding:6px;
+    /*background-color: #757575;*/
+    background-color: #337ab7;
+    border: none;
+    border-radius: 3px;
+    color: white;
+
+}
+.blueButton:hover{
+    background-color: #2b669a;
+}
+
 .contentDiv{
     margin-left:25%;
     color:#888;

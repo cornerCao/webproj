@@ -96,7 +96,7 @@
   </script>
   <style type="text/css">
     .mainDiv{
-      margin-top: 70px;
+      margin: 70px 10px;
     }
     .mainDiv > h1{
       font-size: 20px;
@@ -107,19 +107,7 @@
       height: 400px;
       margin-top: 10px;
     }
-    form > input:nth-child(4),form > input:nth-child(5){
-      margin-top: 10px;
-      padding:6px;
-      /*background-color: #757575;*/
-      background-color: #337ab7;
-      border: none;
-      border-radius: 3px;
-      color: white;
 
-    }
-    form > input:nth-child(4):hover,form > input:nth-child(5):hover{
-      background-color: #2b669a;
-    }
     form > input:nth-child(2){
       padding:5px;
       font-size: 12px;
@@ -138,8 +126,8 @@ include_once "helper/nav.php";
     <input type="text" id="to" name="to" required="required" placeholder="Enter your conference venue" size="30" />
     <br />
 
-    <input type="submit" />
-    <input type="reset"  onclick="document.location.reload();" />
+    <input class="blueButton" type="submit" />
+    <input class="blueButton" type="reset"  onclick="document.location.reload();" />
   </form>
   <div id="map"></div>
   <div id="panel"></div>

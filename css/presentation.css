@@ -14,39 +14,6 @@
 
 }
 
-
-/*
-.eventTable .legend{
-    font-weight: bold;
-}
-.event>span,.eventTable>.legend>span{
-    padding: 10px;
-    float: left;
-    width: 16%;
-    text-align: center;
-}
-
-.legend>span{
-    border: 1px solid black;
-}
-.pre,.event>.legend{
-    margin-left: 16%;
-    width: 81%;
-}
-.pre>span,.event>.legend>span{
-    padding: 10px;
-    float: left;
-    width: 14%;
-    text-align: center;
-}
-.pre>span,.event>span{
-    border-right: 1px dashed #D9D9D9;
-    border-bottom: 1px dashed #D9D9D9;
-}
-.pre>span:first-child,.event>span:first-child{
-    border-left: 1px dashed #D9D9D9;
-}*/
-
 .preCell > .table tr > td{
     border: none;
     border: 1px dashed #D9D9D9;

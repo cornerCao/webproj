@@ -58,7 +58,7 @@
 							<td><input type="password" name="adminpw" id="adminpw"></td>
 						</tr>
 					</table>
-					<button type="submit">Login</button>
+					<button class="blueButton" type="submit">Login</button>
 				</form>
 			</div>
 		</div>

@@ -15,15 +15,17 @@ include_once "helper/nav.php";
 <div class="uploadCSVDiv">
 	<form action="upload.php" method="post" enctype="multipart/form-data">
     <input required="required" multiple type="file" name="fileToUpload[]" id="fileToUpload" style="display: none">
-    <span class="chooseDiv chooseFileDiv" onclick="chooseFile()">Select File</span>
+    <span class="chooseFileDiv" onclick="chooseFile()">Select File</span>
         <span id="filenamePrev"></span>
     <input disabled="disabled" class="submitInput" type="submit" value="Upload" name="submit">
 	</form>
 </div>
 
+<!--link to survey-->
 <div class="feedback">
     <a href="./survey.php"><span class="glyphicon glyphicon-pencil"></span></a>
 </div>
+<!--goto top-->
 <a id="gotoTop" onclick="gotoTop()"><span class="glyphicon glyphicon-chevron-up"></span></a>
 <?
 include_once "helper/connect.php";
@@ -36,6 +38,7 @@ if(isset($_GET['date'])){
 }
 $result=mysql_query($sql) or die(mysql_error());
 ?>
+<!--navigation to different days-->
 <ul id="date" class="nav nav-pills" role="tablist">
     <li <?if(!isset($_GET['date'])){?>class="active"<?}?> role="presentation"><a href="conference.php">All</a></li>
     <? while ($date = mysql_fetch_assoc($temp)){?>
@@ -71,6 +74,7 @@ $result=mysql_query($sql) or die(mysql_error());
             </div>
         </li>
         <?}
+        //close the database connection
         mysql_close($connect);
         ?>
 

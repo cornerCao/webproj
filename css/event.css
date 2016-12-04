@@ -11,7 +11,7 @@
     color: white;
 }
 
-.chooseDiv:hover{
+.chooseFileDiv:hover{
     /*background-color: #484b51;*/
     background-color: #2b669a;
     color: white;
@@ -93,7 +93,7 @@
 }
 
 #date{
-    margin: 100px auto 0;
+    margin: 110px auto 0;
     max-width: 700px;
 
 }
