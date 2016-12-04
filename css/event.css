@@ -11,7 +11,7 @@
     color: white;
 }
 
-.chooseFileDiv:hover{
+.chooseFileDiv:hover,.chooseDiv:hover{
     /*background-color: #484b51;*/
     background-color: #2b669a;
     color: white;
