@@ -1,4 +1,5 @@
 <?php
+//upload
 $target_dir = "uploads/";
 $message = "";
 $target_files = $_FILES["fileToUpload"]["name"];
@@ -35,7 +36,7 @@ for($i=0;$i<count($target_files);$i++){
         } else {
             echo "Sorry, there was an error uploading your file.";
         }
-}
+    }
 }
 import();
 
@@ -44,9 +45,8 @@ exit;
 
 function import()
 {
-    $connect = mysql_connect("mysql.comp.polyu.edu.hk", "16027789x", "jsiyppoo") or die("链接数据库失败！");
-    mysql_select_db("16027789x", $connect) or die (mysql_error());
-    $file = fopen("Events_CSV.csv", "r");
+    include_once "helper/connect.php";
+    $file = fopen("uploads/Events_CSV.csv", "r");
     $i = 0;
     while (!feof($file)) {
         $data = fgetcsv($file);
@@ -59,13 +59,13 @@ function import()
         $info = $temp1[$i];
         if ($info[5] == "") $info[5] = $last;
         else $last = $info[5];
-        $sql = "insert into Events(eventID,date,beginTime,endTime,title,venue) values('$info[0]','$info[1]','$info[2]','$info[3]','$info[4]','$info[5]');";
+        $sql = "insert into events(eventID,date,beginTime,endTime,title,venue) values('$info[0]','$info[1]','$info[2]','$info[3]','$info[4]','$info[5]');";
         $res = mysql_query($sql) or die(mysql_error());
         if (mysql_error()) {
             echo "failed!";
         }
     }
-    $file = fopen("AuthorsAbstracts.csv", "r");
+    $file = fopen("uploads/AuthorsAbstracts.csv", "r");
     $i = 0;
     while (!feof($file)) {
         $data = fgetcsv($file);
@@ -75,13 +75,13 @@ function import()
     fclose($file);
     for ($i = 1; $i < count($temp2); $i++) {
         $info = $temp2[$i];
-        $sql = "insert into AuthorsAbstracts(abstractID,authorID,lastname,firstname,type) values('$info[0]','$info[1]','$info[2]','$info[3]','$info[4]');";
+        $sql = "insert into authorsabstracts(abstractID,authorID,lastname,firstname,type) values('$info[0]','$info[1]','$info[2]','$info[3]','$info[4]');";
         mysql_query($sql) or die(mysql_error());
         if (mysql_error()) {
             echo "failed!";
         }
     }
-    $file = fopen("PresentationCSV.csv", "r");
+    $file = fopen("uploads/PresentationCSV.csv", "r");
     $i = 0;
     while (!feof($file)) {
         $data = fgetcsv($file);
@@ -92,23 +92,23 @@ function import()
     for ($i = 1; $i < count($temp3); $i++) {
         $info = $temp3[$i];
         if ($info[1] == "keynote") {
-            $sql = "select eventID from Events where LOWER(title)=LOWER('keynote session') and date='$info[10]' and '$info[8]'>=beginTime and '$info[9]'<=endTime;";
+            $sql = "select eventID from events where LOWER(title)=LOWER('keynote session') and date='$info[10]' and '$info[8]'>=beginTime and '$info[9]'<=endTime;";
             $res = mysql_query($sql) or die(mysql_error());
             $ID = mysql_fetch_array($res);
             $event = $ID[0];
         } else if ($info[1] == "parallel") {
             echo "haha";
-            $sql = "select eventID from Events where LOWER(title)=LOWER('parallel sessions') and date='$info[10]' and '$info[8]'>=beginTime and '$info[9]'<=endTime;";
+            $sql = "select eventID from events where LOWER(title)=LOWER('parallel sessions') and date='$info[10]' and '$info[8]'>=beginTime and '$info[9]'<=endTime;";
             $res = mysql_query($sql) or die(mysql_error());
             $ID = mysql_fetch_array($res);
             $event = $ID[0];
         }
-        $sql = "insert into Presentation(abstractID,type,title,speakerID,beginTime,endTime,date,biography,eventID,abstract) values('$info[0]','$info[1]','$info[2]','$info[5]','$info[8]','$info[9]','$info[10]','$info[11]','$event');";
+        $sql = "insert into presentation(abstractID,type,title,speakerID,beginTime,endTime,date,biography,eventID,abstract) values('$info[0]','$info[1]','$info[2]','$info[5]','$info[8]','$info[9]','$info[10]','$info[11]','$event','$info[12]');";
         mysql_query($sql) or die(mysql_error());
         if (mysql_error()) {
             echo "failed!";
         }
-        $sql = "update AuthorsAbstracts set speakerPhoto='$info[6]',speakerAffiliation='$info[7]' where authorID='$info[5]';";
+        $sql = "update authorsabstracts set speakerPhoto='$info[6]',speakerAffiliation='$info[7]' where authorID='$info[5]';";
         mysql_query($sql) or die(mysql_error());
         if (mysql_error()) {
             echo "failed!";
