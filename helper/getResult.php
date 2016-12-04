@@ -1,3 +1,4 @@
+<!--handle search logics-->
 <?php
 	require_once("connect.php");
 	if($_POST['input']){

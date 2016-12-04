@@ -12,6 +12,18 @@ footer address {
     color: #888;
 }
 
+.back{
+    position: fixed;
+    top:60px;
+    left:5px;
+    padding: 10px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    text-align: center;
+
+}
+
 #gotoTop{
     display:none;
     position: fixed;

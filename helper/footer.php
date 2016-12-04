@@ -1,3 +1,5 @@
+<!--code reuse-->
+<!--footer -->
 <footer>
     <address>
 <a href="https://www.comp.polyu.edu.hk/" target="_blank">COMP</a> <a href="https://www.polyu.edu.hk/web/en/home/index.html" target="_blank">PolyU</a> HongKong<br/>
