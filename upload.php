@@ -59,7 +59,8 @@ function import()
         $info = $temp1[$i];
         if ($info[5] == "") $info[5] = $last;
         else $last = $info[5];
-        $sql = "insert into events(eventID,date,beginTime,endTime,title,venue) values('$info[0]','$info[1]','$info[2]','$info[3]','$info[4]','$info[5]');";
+        $date_tt=gmdate('Y-d-m',$info[1]);
+        $sql = "insert into events(eventID,date,beginTime,endTime,title,venue) values('$info[0]','$date_tt','$info[2]','$info[3]','$info[4]','$info[5]');";
         $res = mysql_query($sql) or die(mysql_error());
         if (mysql_error()) {
             echo "failed!";
@@ -91,19 +92,20 @@ function import()
     fclose($file);
     for ($i = 1; $i < count($temp3); $i++) {
         $info = $temp3[$i];
+        $date_t=gmdate('Y-d-m',$info[10]);
         if ($info[1] == "keynote") {
-            $sql = "select eventID from events where LOWER(title)=LOWER('keynote session') and date='$info[10]' and '$info[8]'>=beginTime and '$info[9]'<=endTime;";
+            $sql = "select eventID from events where LOWER(title)=LOWER('keynote session') and date='$date_t' and '$info[8]'>=beginTime and '$info[9]'<=endTime;";
             $res = mysql_query($sql) or die(mysql_error());
             $ID = mysql_fetch_array($res);
             $event = $ID[0];
         } else if ($info[1] == "parallel") {
             echo "haha";
-            $sql = "select eventID from events where LOWER(title)=LOWER('parallel sessions') and date='$info[10]' and '$info[8]'>=beginTime and '$info[9]'<=endTime;";
+            $sql = "select eventID from events where LOWER(title)=LOWER('parallel sessions') and date='$date_t' and '$info[8]'>=beginTime and '$info[9]'<=endTime;";
             $res = mysql_query($sql) or die(mysql_error());
             $ID = mysql_fetch_array($res);
             $event = $ID[0];
         }
-        $sql = "insert into presentation(abstractID,type,title,speakerID,beginTime,endTime,date,biography,eventID,abstract) values('$info[0]','$info[1]','$info[2]','$info[5]','$info[8]','$info[9]','$info[10]','$info[11]','$event','$info[12]');";
+        $sql = "insert into presentation(abstractID,type,title,speakerID,beginTime,endTime,date,biography,eventID,abstract) values('$info[0]','$info[1]','$info[2]','$info[5]','$info[8]','$info[9]','$date_t','$info[11]','$event','$info[12]');";
         mysql_query($sql) or die(mysql_error());
         if (mysql_error()) {
             echo "failed!";
